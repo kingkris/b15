@@ -3,85 +3,50 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Introduction to images</title>
+	<title>Introduction to CSS</title>
 	<meta name="Author" content="KriShne Gowda">
 	<meta name="Agency" content="Dzineden">
 	<meta name="description" content="Dzineden">
 	<!-- <meta http-equiv="refresh" content="5;url=http://www.htmlden.com/"> -->
-	<link rel="stylesheet" href="css/images.css">
+	<link rel="stylesheet" href="css/intro.css">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <base href="http://www.htmlden.com/"> -->
 
 
 	<style>
+		/*This is the way you write css comment*/
+		/*These are internal Styles - we use style tag
+		*/
+
 		body{
 			background-color: #FFE1E1;
 		}
-		.title{
-			font-size: 40px;
-			color: green
-		}
 	</style>
-	<script
-			  src="https://code.jquery.com/jquery-3.2.1.min.js"
-			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-			  crossorigin="anonymous">
-	</script>
-<script>
-/*	
-	$(document).ready(function() {
-		x = prompt('What is you name');
-		y = x + "Welcome home";
-		$('.title').html(y);
-	});
-*/	
-</script>
-<noscript>
-	This browser doesn't support jscript, or you might have disabled it. Kindly enable it
-</noscript>
-
-
 </head>
 <body>
-	<h1 class="title">Using img tag</h1>
+<!-- This is the html comment -->
+<header id="site-header">	
+	<h1 class="bdr-btm-style" id="">Using img tag</h1>
 	<img src="images/icon-speaker.png" alt="Important Announcement" title="This text will apear whne you rollover on a image">
+</header>
 	<img src="images/icon-help.png" alt="help">
 	<a href="test.html">This is a test link</a>
-	<img src="logo-png24.png" alt="logo">
+	<img src="logo-png24.png" alt="logo" class="bdr-btm-style">
 
 <hr>
 
-	<img src="images/logo-gif-4.gif" alt="">
-	<img src="images/logo-gif-16.gif" alt="">
-	<img src="images/logo-gif-32.gif" alt="">
-	<img src="images/logo-gif-256.gif" alt="">
-	<img src="images/logo-png8-256.png" alt="">
-	<img src="images/logo-jpeg-vh.jpg" alt="">
-	<img src="images/logo-jpeg-h.jpg" alt="">
-	<img src="images/logo-jpeg-max.jpg" alt="">
-	<!-- <img src="images/logo-jpeg-med.jpg" alt=""> -->
-	<img src="images/logo-jpeg-low.jpg" alt="">
-	<img src="images/logo-png24.png" alt="">
-
 	<div class="dabba">
-		<h2>Some list</h2>
+		<h2 class="bdr-btm-style bdr-color">Some list</h2>
 		<ul>
+		<!-- Example of Inline style - we use style attribute -->
 			<li style="font-size: 18px;">list item 001</li>
 			<li>list item 002</li>
-			<li>list item 003</li>
+			<li class="bdr-btm-style">list item 003</li>
 			<li>list item 004</li>
 			<li>list item 005</li>
 		</ul>
 	</div>
-<style>
-	.dabba{
-		color: violet;
-		border: solid 2px red;
-	}
-	.dabba ul{
-		color: blue;
-	}
-</style>
+	<h2>another h2 tag</h2>
 
 
 	<div class="questions">

@@ -1,0 +1,114 @@
+/*This is the way you write css comment*/
+
+/*These are External Styles - we use link tag in html file to link a external css file
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+	We define Selectors inside internal and external stylesheets
+
+
+	selector-name {
+		css-property : value;
+		css-property : value;
+		css-property : value;
+		css-property : value;
+		css-property : value;
+		css-property : value
+	}
+
+Types of Selectors
+------------------------------
+
+Universal Selector
+*/
+*{
+	box-sizing: border-box;
+}
+
+/* Universal reset 
+*{ 
+	margin: 0;
+	padding: 0;
+}
+*/
+.dabba *{
+
+}
+
+/**
+ *
+ * Tag or Type selector
+ * ++++++++++++++++++++++++++++++++++++++++++++++
+ */
+
+html{
+	font-size:16px;
+	color:#444;
+	font-family: 'Open sans', sans-serif;
+	font-weight: 300;
+}
+
+li{
+	font-style: italic;
+}
+/* grouping of selectors */
+h1,
+h2,
+h3{
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+}
+h1{
+	color:crimson;
+	border-bottom: solid 4px green;
+}
+
+/**
+ *
+ * class or dot selector
+ * ++++++++++++++++++++++++++++++++++++++++++++++
+ */
+
+/* 
+	Naming Convention
+	------------------------------
+
+	1. starts with .
+	2. it can be alpha-numeric
+	3. canot begin with number
+	4. you can use hypen, underscore, camelCase
+	5. http://bdavidxyz.com/blog/how-to-name-css-classes/ 
+	6. https://css-tricks.com/semantic-class-names/ 
+	7. You have to apply this multiple elements using class attribute
+
+*/
+
+.bdr-btm-style{
+	border-bottom-style: dashed;
+}
+.bdr-color{
+	border-color: #0E51C0;
+}
+
+/**
+ *
+ * ID or dot selector
+ * ++++++++++++++++++++++++++++++++++++++++++++++
+ */
+
+/* 
+	Naming Convention
+	------------------------------
+
+	1. starts with #
+	2. it can be alpha-numeric
+	3. canot begin with number
+	4. you can use hypen, underscore, camelCase
+	5. http://bdavidxyz.com/blog/how-to-name-css-classes/ 
+	6. https://css-tricks.com/semantic-class-names/ 
+	7. You have to apply this multiple elements using class attribute
+
+*/
+
+#site-header{
+	background-color: #B5C624;
+}
