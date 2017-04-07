@@ -112,3 +112,100 @@ h1{
 #site-header{
 	background-color: #B5C624;
 }
+
+/**
+ *
+ * Psuedo selectors
+ * ++++++++++++++++++++++++++++++++++++++++++++++
+ */
+
+/* 
+
+	:link, :hover, :visited, :active,
+	:before, :after, :first-child, :last-child, :nth-child, :focus
+
+
+Complete list of Psuedo classes
+	https://developer.mozilla.org/en/docs/Web/CSS/Pseudo-classes
+
+	
+Complete list of Psuedo Elements
+	https://developer.mozilla.org/en-US/docs/Web/CSS/pseudo-elements
+
+
+	1. They are normally used in combintaion of other selectors
+
+*/
+
+.site-links a:link,
+.site-links a:visited{
+	text-decoration: none;
+	color:white;
+	border: solid 1px red;
+	padding:5px;
+	display: inline-block;
+}
+.site-links a:hover{
+	background-color: #FFF;
+	color:#B5C624;
+}
+.site-links a:active{
+	background-color: #F00;
+	color:#FFF;
+}
+.site-links a:focus{
+	background-color: #0F0;
+	color:#FFF;
+}
+
+.site-links a:before{
+	content:"Chapter - ";
+	border: dashed 1px white;
+	margin-right: 10px;
+}
+.site-links a:after{
+	content:" :-  ";
+}
+
+/**
+ *
+ * Descendant selectors
+ * ++++++++++++++++++++++++++++++++++++++++++++++
+ */
+
+.site-links li{font-style: normal;}
+.site-links li:first-child{font-weight: bold;}
+.site-links li:last-child{
+	font-weight: bold;
+	border-bottom: solid 4px red;
+	
+}
+.site-links li:last-child a{
+	color:green
+}
+
+/* 
+
+color:
+background-color:
+font-size:
+border: style width color;
+
+ */
+
+
+.sidebar{
+	width:180px;
+	margin:20px auto;
+	border: dashed 1px #CCC;
+	padding:10px;
+	background-color: #fff;
+}
+
+.sidebar li:nth-child(odd) a{
+	background-color: #F00;
+}
+.sidebar li:nth-child(even) a{
+	background-color: #00F;
+}
+
