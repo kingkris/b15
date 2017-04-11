@@ -61,7 +61,9 @@ h1{
 	color:crimson;
 	border-bottom: solid 4px green;
 }
-
+a{
+	text-decoration: none;
+}
 /**
  *
  * class or dot selector
@@ -202,10 +204,22 @@ border: style width color;
 	background-color: #fff;
 }
 
-.sidebar li:nth-child(odd) a{
-	background-color: #F00;
+.sidebar ul{
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	list-style: none;
 }
-.sidebar li:nth-child(even) a{
-	background-color: #00F;
+.sidebar li a{
+	border-bottom: solid 1px #DDD;
+	display: block;
+	line-height: 30px;
+	padding:0 10px;
 }
+.sidebar li:nth-child(even) a{background-color: #FFC8F4;}
+.sidebar li:nth-child(odd) a{background-color: #C8D4FF;}
+
+.sidebar li a:hover{color: #FFF;}
+.sidebar li:nth-child(even) a:hover{background-color: #FF00CC;}
+.sidebar li:nth-child(odd) a:hover{background-color: #0038FF;}
 
