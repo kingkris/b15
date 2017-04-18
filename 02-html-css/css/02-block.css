@@ -17,7 +17,7 @@ block related style properties
     ^ default value is auto
     ^ This property gets inherited
     ^ This property can be applied to all the elements
-    ^ Can't animate
+    ^ Can animate
 
 ~  vertical-align : baseline | sub | super | text-top | text-bottom | middle | top | bottom | <percentage> | <length>
     ^ default value is baseline
@@ -44,6 +44,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align
     ^ This property gets inherited
     ^ This property can be applied to block level elements
     ^ Can't animate
+    https://developer.mozilla.org/en/docs/Web/CSS/white-space
+
 
 ~  display: block | inline | inline-block | 
             table | table-row | table-cell | 
@@ -67,4 +69,53 @@ inherit;
 /* ==========================================================================
    Demo of Block related properties
    ========================================================================== */
+
+.word-letter-spacing{
+    word-spacing:1em;
+    letter-spacing:-.2em;
+    transition:all 250ms ease;
+}
+.word-letter-spacing:hover{
+    letter-spacing:.5em
+}
+
+
+
+
+
+.dabba{
+    text-align: center;
+
+
+
+
+
+
+    width: 300px;
+    height: 200px;
+    border: solid 1px red;
+    margin:20px auto;
+    transition:all 250ms ease;
+}
+
+.dabba img{
+    vertical-align: middle;
+}
+
+.tbl{
+    border: solid 1px green;
+    width:50%;
+}
+.tbl td{
+    border: solid 1px green;
+    text-align: center;
+    vertical-align: bottom;
+}
+.text-indent-demo{
+    text-indent:30px;
+}
+
+.white-space-demo{
+    white-space:pre-wrap
+}
 

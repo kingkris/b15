@@ -1,19 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Vidaloka');
 
-
-
 body{
   font-family: 'Lato', sans-serif;
 }
-
-
 .site-header h1 a{
   font-family: 'Vidaloka', serif;
   font-weight: 400;
   color: #FF5722;
   text-decoration: none;
 }
-
 .site-links{}
 .site-links li{}
 .site-links li a{
