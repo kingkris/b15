@@ -119,3 +119,127 @@ inherit;
     white-space:pre-wrap
 }
 
+/**
+ *
+ * Display Property demo
+ *
+ */
+
+.dis-demo{
+    border: solid 1px red;
+    margin:10px;
+    display:none;
+}
+
+
+/*----------  Image rollovers  ----------*/
+
+.menu-container{
+    margin: 15px auto;
+    width:800px;
+    border: solid 1px #CCC;
+    border-radius:10px;
+    padding: 10px;
+    background-color: #E7C5FF;
+}
+.menu-container:after{
+    content:"";
+    clear: both;
+    display: block;
+}
+.menu-container span{
+    float: left;
+}
+.menu-container img{
+    border-radius: 50%;
+    display: block;
+    width:115px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.menu-container .info{
+    margin-left: 115px;
+    border-radius:10px;
+    padding: 10px;
+    background-color: #FFF;
+    display:none
+}
+.menu-container:hover .info{
+    display:block
+}
+
+
+/*----------  Tabbed view  ----------*/
+.tabbed-view{
+    margin: 15px auto;
+    width:800px;
+    border: solid 1px #CCC;
+    border-radius:10px;
+    padding: 10px;
+    background-color: #E7C5FF;
+    position: relative;
+    min-height: 400px;
+}
+.tabbed-view:after{
+    content:"";
+    clear: both;
+    display: block;
+}
+.tab{
+    float: left;
+}
+.tab img{
+    border-radius:50%;
+    cursor: pointer;
+}
+.tab .info{
+    background-color: #fff;
+    border-radius:10px;
+    padding:10px;
+    position: absolute;
+    right:10px;
+    top:120px;
+    left:10px;
+    display: none;
+    height:0;
+    overflow: hidden;
+    transition: all 250ms ease;
+}
+.tab:hover .info{
+    display: block;
+    height:220px;
+    transition: all 250ms ease;
+}
+
+
+/*----------  Photo grid  ----------*/
+.blocks{
+    margin: 15px auto;
+    width:1200px;
+    border: solid 1px #CCC;
+    border-radius:10px;
+    padding: 20px;
+    background-color: #E7C5FF;
+    text-align: center;
+}
+.section-heading{
+    border-bottom: solid 4px #3B00D1;
+    font-size:30px;
+}
+.photo{
+    border:solid 1px #CCC;
+    padding:10px;
+    background-color: #fff;
+    display: inline-block;
+    margin:0 15px 15px 0;
+    border-radius:4px;
+    width:21%;
+}
+.photo img{
+    width:100%;
+}
+.photo p{
+    margin:4px 0 0;
+}
+
+
