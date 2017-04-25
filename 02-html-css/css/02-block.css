@@ -80,16 +80,8 @@ inherit;
 }
 
 
-
-
-
 .dabba{
     text-align: center;
-
-
-
-
-
 
     width: 300px;
     height: 200px;
@@ -241,5 +233,14 @@ inherit;
 .photo p{
     margin:4px 0 0;
 }
+.photo p span{
+    padding-right: 6px;
+}
+.photo p span:before{
+    content:"\20B9";
+    padding-right: 3px;
+}
+
+
 
 
