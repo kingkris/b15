@@ -36,7 +36,7 @@ Background related style properties
     ^ You can't animate
 
 ~  background-position
-        values are specified in key words as x & y codordinates
+    values are specified in key words as x & y codordinates
       for x - left center right
       for y - top center bottom
       you can also specify as length
@@ -81,6 +81,7 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
 
 body{
   background-image: url('../images/diagnal-lines-pattern.png');
+  background-attachment: fixed;
 }
 
 
@@ -89,5 +90,119 @@ body{
   height: 200px;
 
   background-color: green;
-  background-image: url('../images/tomato.jpg')
+  background-image: url('../images/tomato.jpg');
+  background-repeat: repeat-y;
+}
+.demo2{
+  width:300px;
+  height: 200px;
+
+  background-color: green;
+  transition:all 550ms ease;
+  margin:20px auto;
+  background-image: url('../images/bg-grid.jpg');
+}
+.demo2:hover{
+  background-color: red;
+}
+.demo3{
+  margin:10px 0;
+  height:400px;
+
+  background-image: url('../images/SM457150.jpg');
+  background-attachment: fixed;
+}
+.demo4{
+  margin:10px 0;
+  height:400px;
+
+  background-image: url('../images/SM517083.jpg');
+  background-attachment: fixed;
+}
+
+.demo5{
+  margin:10px auto;
+  height:450px;
+  width:450px;
+
+  background-image: url('../images/tomato.jpg');
+  background-color: #DEBBFF;
+  background-repeat: no-repeat;
+
+  /* background-position: left center; */
+  /* background-position: -30px 30px; */
+  /* background-position: 100% 100%; */
+  background-position: left 100%;
+
+
+  background: #DEBBFF url('../images/tomato.jpg') no-repeat fixed left 100%;
+
+}
+
+
+.photo-grid{
+  margin:30px;
+  border: solid 4px #CCC;
+  background-color: #E7E7E7;
+  padding: 20px;
+}
+.photo-grid:after{
+  content:"";
+  clear: both;
+  display: block;
+}
+.photo-grid h1{
+  text-align: center;
+  background-image: url('../images/floral-bg.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 60px;
+}
+
+.photo{
+  width:120px;
+  height:120px;
+  float: left;
+  margin:10px;
+  border: solid 1px #CCC;
+  border-radius:50%;
+  background-color: #0F0;
+  background-image: url('../images/SM457150.jpg');
+  background-repeat: no-repeat;
+}
+
+.face1{background-position: -10px -95px;}
+.face2{background-position: -130px -75px;}
+.face3{background-position: -225px -90px;}
+
+
+.all-faces{
+  width:400px;
+  height:260px;
+  border-radius:15px;
+  background-size: contain;
+}
+
+.demo6{
+  width:400px;
+  height:300px;
+  padding:50px;
+  border: solid 80px rgba(0,0,0,.6);
+  background-color: #fff;
+  margin:25px auto;
+  background-image: url('../images/bg-grid.jpg');
+  background-origin: content-box;
+  background-clip: border-box;
+}
+.demo7{
+  width:400px;
+  height:220px;
+  padding:50px;
+  border: solid 5px rgba(0,0,0,.6);
+  background-color: #fff;
+  margin:25px auto;
+  background-image:  url('../images/logo-png24.png'), url('../images/SM517083.jpg');
+  background-size: auto, cover;
+  background-repeat: no-repeat;
+  background-position: center bottom ,0 0;
 }
