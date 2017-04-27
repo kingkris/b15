@@ -119,6 +119,16 @@ body{
   background-image: url('../images/SM517083.jpg');
   background-attachment: fixed;
 }
+.demo44{
+  margin:10px auto;
+  height:500px;
+
+
+  background-image: url('../images/horse.jpg');
+  background-attachment: scroll;
+  background-size:cover;
+  background-position: left center;
+}
 
 .demo5{
   margin:10px auto;
@@ -206,3 +216,12 @@ body{
   background-repeat: no-repeat;
   background-position: center bottom ,0 0;
 }
+/*----------  Gradient Demo  ----------*/
+
+.grad-demo{
+  background: #b4e391; /* Old browsers */
+  background: radial-gradient(ellipse at left, #b4e391 0%,#61c419 100%);
+  line-height: 50px;
+  text-align: center;
+}
+

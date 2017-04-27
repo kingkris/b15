@@ -101,8 +101,19 @@ inherit;
 .tbl td{
     border: solid 1px green;
     text-align: center;
-    vertical-align: bottom;
+    vertical-align: top;
 }
+.va-demo{
+    width:200px;
+    height:200px;
+    border: solid 1px red;
+    background-color: #FED2F7;
+    display:table-cell;
+    vertical-align: middle;
+    text-align: center;
+    break
+}
+.form-row input {vertical-align: middle;}
 .text-indent-demo{
     text-indent:30px;
 }

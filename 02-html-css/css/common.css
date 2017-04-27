@@ -3,13 +3,18 @@
 body{
   font-family: 'Lato', sans-serif;
 }
+
 .site-header h1 a{
   font-family: 'Vidaloka', serif;
   font-weight: 400;
   color: #FF5722;
   text-decoration: none;
 }
-.site-links{}
+.site-links{
+	padding-left: 0;
+	list-style: none;
+	border: solid 1px red;
+}
 .site-links li{}
 .site-links li a{
 	text-decoration: none;
@@ -17,8 +22,12 @@ body{
 	text-transform: uppercase;
 	font-size:14px;
 	line-height: 28px;
+	background-color: #A472FF;
+	display: block;
+	margin-bottom: 1px;
+	color:#FFF
 }
 .site-links li a:hover,
 .site-links li.selected a{
-	color:#FF5722;
+	background-color: #FF5722;
 }
