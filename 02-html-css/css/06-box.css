@@ -1,0 +1,191 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+Box related style properties
++++++++++++++++++++++++++++++++++++++++++++
+
+~  width: <length>
+    ^ default value auto - for block level it is 100%, for inline it is content width
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to 
+                all block level elements
+                all floated elements
+                all positioned elements
+    ^ You can animate
+
+~  min-width: <length>
+    ^ default value auto - for block level it is 100%, for inline it is content width
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to 
+                all block level elements
+                all floated elements
+                all positioned elements
+    ^ You can animate
+
+~  max-width: <length>
+    ^ default value auto - for block level it is 100%, for inline it is content width
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to 
+                all block level elements
+                all floated elements
+                all positioned elements
+    ^ You can animate
+
+~  height: <length>
+    ^ default value auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to 
+                all block level elements
+                all floated elements
+                all positioned elements
+    ^ You can animate
+
+~  min-height: <length>
+    ^ default value auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to 
+                all block level elements
+                all floated elements
+                all positioned elements
+    ^ You can animate
+
+~  max-height: <length>
+    ^ default value auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to 
+                all block level elements
+                all floated elements
+                all positioned elements
+    ^ You can animate
+
+~  overflow: visible | hidden | scroll | auto
+    ^ default value visible
+    ^ This property doesn't gets inherited
+    ^ This property can be to all elements
+    ^ You can animate
+
+~  overflow-x: visible | hidden | scroll | auto
+~  overflow-y: visible | hidden | scroll | auto
+
+~  padding-top: 
+~  padding-right: 
+~  padding-bottom: 
+~  padding-left: 
+
+~  padding: 
+    ^ default value is
+            for ol and ul padding-left 40px
+    ^ This property doesn't gets inherited
+    ^ This property can be to all elements, except
+            padding-top and padding-bottom, they won't
+            work on inline elements
+    ^ You can animate
+
+
+
+~  margin-top: 
+~  margin-right: 
+~  margin-bottom: 
+~  margin-left: 
+
+~  margin: 
+    ^ default value 
+    ^ This property doesn't gets inherited
+    ^ This property can be to all elements, except
+            margin-top and margin-bottom, they won't
+            work on inline elements
+    ^ You can animate
+
+~  float : none | left | right
+    ^ default value none
+    ^ This property doesn't gets inherited
+    ^ This property can be to all elements
+    ^ You can animate
+
+clear: none | left | right | both
+
+
+box-sizing – content-box | padding-box | border-box
+
+
+
+
+
+
+opacity 
+resize - none | both | horizontal | vertical 
+Flexbox
+column-count
+column-gap
+column-fill – auto | balance
+column-rule - <'column-rule-width'> || <'column-rule-style'> || <'column-rule-color'>
+
+grids
+
+
+auto;
+inherit;
+
+Background related important links
++++++++++++++++++++++++++++++++++++++++++++
+
+https://developer.mozilla.org/en/docs/Web/CSS/background-color
+*/
+
+/* ==========================================================================
+   Demo of Box related properties
+   ========================================================================== */
+
+.demo1{
+  border: solid 1px red;
+  min-width:300px;
+  max-width: 600px;
+  width:500px;
+
+  min-height:80px;
+  max-height:250px;
+  height:300px;
+
+  overflow:auto;
+}
+
+/*----------  Padding and margin  ----------*/
+
+.demo2{
+  border: solid 1px red;
+  background-color: #0F0;
+  padding:10px;
+  margin:10px;
+}
+
+
+/*----------  Padding and margin  ----------*/
+
+.wrapper{
+  border: solid 5px #CCC;
+  background-color: #EAEAEA;
+  padding:10px;
+  width:1000px;
+  margin:0 auto;
+}
+.demo3{
+  width:100px;
+  height:60px;
+  background-color: #fff;
+  border: solid 1px #888;
+  float: right;
+}
+
+
+
+
+
+/* BL + PL + WIDTH + PR + BR  */
