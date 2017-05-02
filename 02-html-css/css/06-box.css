@@ -104,16 +104,29 @@ Box related style properties
             work on inline elements
     ^ You can animate
 
+~  box-sizing: content-box | padding-box | border-box
+    ^ default value content-box
+    ^ This property doesn't gets inherited
+    ^ This property can be to all elements
+    ^ You can't animate
+
+
 ~  float : none | left | right
     ^ default value none
     ^ This property doesn't gets inherited
     ^ This property can be to all elements
     ^ You can animate
 
-clear: none | left | right | both
+
+~  clear: none | left | right | both
+    ^ default value none
+    ^ This property doesn't gets inherited
+    ^ This property can be to all elements
+    ^ You can't animate
 
 
-box-sizing – content-box | padding-box | border-box
+
+
 
 
 
@@ -146,6 +159,7 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
 
 .demo1{
   border: solid 1px red;
+
   min-width:300px;
   max-width: 600px;
   width:500px;
@@ -156,6 +170,19 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
 
   overflow:auto;
 }
+.demo11{
+  border: solid 5px red;
+  width:500px;
+  height:300px;
+  padding: 10px;
+  background-color: #feb130;
+
+  overflow-x:auto;
+  overflow-y:hidden;
+}
+
+
+
 
 /*----------  Padding and margin  ----------*/
 
@@ -184,8 +211,30 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
   float: right;
 }
 
+/*----------  header  ----------*/
 
+.header1{
+  background-color: #fd5c4f;
+}
+.header1:after{
+  display: block;
+  content: "";
+  clear: both;
+}
 
+.logo{
+  border: solid 1px green;
+  float: left;
+}
+.top-icons{
+  border: solid 1px green;
+  float: right;
+  background-color: #0ff;
+}
+.header1 nav{
+  border: solid 1px green;
+  clear: both;
+}
 
 
 /* BL + PL + WIDTH + PR + BR  */
