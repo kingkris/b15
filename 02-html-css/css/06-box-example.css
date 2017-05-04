@@ -3,6 +3,7 @@
 }
 body{
   background-color: #f2f2f2;
+  margin: 0;
 }
 
 .site-header{display: none;}
@@ -110,8 +111,11 @@ body{
   margin: 0 ;
 }
 
+/*----------  Blog related styles  ----------*/
 
-
+.container{
+  border: solid 1px red;
+}
 
 
 

@@ -1,0 +1,79 @@
+*{
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body{
+  background-color: #f4f6f6;
+  margin: 0;
+}
+
+.site-header{display: none;}
+
+/*----------  Blog related styles  ----------*/
+
+.container{
+  border: solid 1px red;
+}
+
+
+/*===================================
+=            Blog header            =
+===================================*/
+
+.blog-header{
+  background-color: #fff;
+}
+/*----------  top-row  ----------*/
+.top-row{
+  border-bottom: solid 1px #f1f1f1;
+  padding: 15px 30px;
+}
+.top-row:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.hamburger{
+  float: left;
+  width: 16px;
+  height: 12px;
+  cursor: pointer;
+  margin-top: 7px;
+}
+.hamburger span{
+  display: block;
+  height: 2px;
+  margin-bottom: 3px;
+  background-color: #afb5b9;
+}
+.hamburger span:last-child{
+  margin-bottom: 0;
+}
+.search{
+  float: right;
+}
+.search input{
+  border: solid 1px #ebebeb;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  width: 350px;
+}
+.search input:focus{
+  border: solid 1px #5965eb;
+  box-shadow: 0 0 5px 0 #2119FF;
+  outline: none;
+}
+
+/*=====  End of Blog header  ======*/
+
+
+
+
+
+
+
+
