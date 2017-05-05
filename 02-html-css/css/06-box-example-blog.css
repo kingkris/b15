@@ -1,10 +1,11 @@
 *{
   box-sizing: border-box;
 }
-*:before,
-*:after {
+*:after,
+*:before{
   box-sizing: border-box;
 }
+
 body{
   background-color: #f4f6f6;
   margin: 0;
@@ -38,10 +39,11 @@ body{
 }
 .hamburger{
   float: left;
-  width: 16px;
-  height: 12px;
+  width: 26px;
   cursor: pointer;
   margin-top: 7px;
+  border: solid 1px red;
+  padding: 5px 20px;
 }
 .hamburger span{
   display: block;
@@ -72,7 +74,43 @@ body{
 
 
 
+.spacer{
+  min-height: 140px;
+}
+#wrapper{
+  width: 1200px;
+  margin: 0 auto;
+}
 
+.boxes{
+  padding: 15px;
+  border: solid 1px red;
+  margin-bottom: 15px;
+}
+.boxes:after,
+.box-content:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.box{
+  width: 33.3333%;
+  float: left;
+  padding: 15px 
+}
+.box-content{
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 4px
+}
+.box-content img{
+  float: left;
+  border-radius: 50%;
+}
+.box-content h2,
+.box-content p{
+  margin: 0 0 0 90px;
+}
 
 
 
