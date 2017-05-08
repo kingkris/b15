@@ -1,0 +1,128 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+Position related style properties
++++++++++++++++++++++++++++++++++++++++++++
+
+~  position: static | relative | absolute | sticky  |  fixed
+    ^ default value static
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+    eg: 
+      .someclass{position:relative}
+      .someclass{position:absolute}
+      .someclass{position:sticky}
+      .someclass{position:fixed}
+
+~  top   : <length>
+~  bottom: <length>
+~  right : <length>
+~  left  : <length>
+    ^ default value auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all positioned elements
+    ^ You can animate
+
+~  z-index: auto | <integer>
+    ^ default value auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all positioned elements
+    ^ You can animate
+
+
+
+~  visibility: visible | hidden | collapse
+Applies to all elements
+overflow: visible | hidden | scroll | auto
+overflow-x
+overflow-y
+
+
+auto;
+inherit;
+
+Background related important links
++++++++++++++++++++++++++++++++++++++++++++
+
+https://developer.mozilla.org/en/docs/Web/CSS/background-color
+*/
+
+/* ==========================================================================
+   Demo of Position related properties
+   ========================================================================== */
+
+.red    {background-color: red;}
+.blue   {background-color: blue;}
+.green  {background-color: green;}
+.crimson{background-color: crimson;}
+.violet {background-color: violet;}
+.orange {background-color: orange;}
+.yellow {background-color: yellow;}
+.indigo {background-color: indigo;}
+
+/*----------  POsition Static  ----------*/
+.demo1{
+  border: solid 1px red;
+  margin: 5px;
+  top:100px;
+}
+
+/*----------  Position Relative  ----------*/
+.demo2{
+  border: solid 1px red;
+  margin: 5px;
+  width: 100px;
+  height: 60px;  
+  position: relative;
+}
+
+.demo2.green{
+  bottom: 40px;
+  left: 30px;
+}
+.demo2.orange{
+  left: 200px;
+}
+.demo2.red{
+  right: 0;
+  transition: all 250ms ease;
+}
+.demo2.red:hover{
+  right: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

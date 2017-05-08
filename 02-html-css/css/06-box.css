@@ -132,7 +132,7 @@ Box related style properties
 
 
 
-
+cursor:
 opacity 
 resize - none | both | horizontal | vertical 
 Flexbox
@@ -237,4 +237,31 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
 }
 
 
+.box{
+  border: solid 1px red;
+}
+.box:before{
+  border: dashed 2px green;
+  content: "Before";
+  display: block;
+  margin: 5px;
+}
+.box:after{
+  border: dashed 2px green;
+  content: "";
+  display: block;
+  margin: 5px;
+  clear: both;
+}
+
 /* BL + PL + WIDTH + PR + BR  */
+
+
+
+
+
+
+
+
+
+
