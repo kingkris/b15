@@ -100,17 +100,128 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
   right: 200px;
 }
 
+/*----------  Position Absolute  ----------*/
+
+.abs-wrapp{
+  width: 1000px;
+  border: solid 4px red;
+  margin: 20px auto;
+  position: relative;
+}
+
+.demo3{
+  border: solid 1px red;
+  margin: 5px;
+  height: 60px;
+  width: 150px;
+}
+div.demo3.green{
+  background-color: rgba(0,200,0,.5);
+  margin: auto;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+}
+
+/*----------  Banner styles  ----------*/
+
+.banner{
+  width: 1000px;
+  border: solid 5px #CCC;
+  margin: 0 auto;
+  position: relative;
+}
+.banner img{
+  width: 100%;
+  display: block;
+}
+.banner h2{
+  background-color: rgba(0,0,0,.75);
+  padding: 20px;
+  margin: 0;
+  color: #FFF;
+  position: absolute;
+  bottom: 0;
+  left: 0;right: 0;
+  text-align: center;
+}
+.arrow{
+  width: 0;
+  height: 0;
+  border-width: 30px;
+  border-style: solid;
+  border-color: transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+
+}
+.arrow.left{
+  border-right-color: blue;
+  left: -60px;
+}
+.arrow.left:hover{border-right-color: green;}
+.arrow.right{
+  border-left-color: blue;
+  right: -60px;
+}
+
+.arrow.right:hover{border-left-color: green;}
 
 
 
+/*----------  activity blocks  ----------*/
 
+.wrapper{
+  width: 1000px;
+  border: solid 1px #CCC;
+  padding: 15px;
+  margin: 25px auto
+}
 
+.activity{
+  padding: 5px 0 0 30px;
+  border-left: solid 1px #547df9;
+  position: relative;
+}
+.activity:before{
+  width: 9px;
+  height: 9px;
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 5px;
+  border-radius: 50%
+}
+.activity p{
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #3c3c3c;
+}
+.activity div{
+  font-size: 13px;
+  font-weight: 300;
+  color: #9a9a9a;
+  padding-bottom: 25px;
+}
+.bd-red{border-left-color: #ea546d;}
+.bd-red:before{background-color: #ea546d;}
 
+.bd-blue{border-left-color: #547df9;}
+.bd-blue:before{background-color: #547df9;}
 
+.bd-green{border-left-color: #88b669;}
+.bd-green:before{background-color: #88b669;}
 
-
-
-
+.bd-orange{border-left-color: #f6da40;}
+.bd-orange:before{background-color: #f6da40;}
 
 
 
