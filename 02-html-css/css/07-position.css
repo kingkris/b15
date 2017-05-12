@@ -223,11 +223,91 @@ div.demo3.green{
 .bd-orange{border-left-color: #f6da40;}
 .bd-orange:before{background-color: #f6da40;}
 
+/*----------  Slider styles  ----------*/
+
+.slider{
+  width:1000px;
+  margin:25px auto;
+  border: solid 10px #E5E5E5;
+  position: relative;
+}
+  .slide{}
+  .slide img{
+    width:100%;
+    height:auto;
+    display: block;
+  }
+  .slide h2{
+    position:absolute;
+    right:0;
+    top:35%;
+    width: 45%;
+    margin:0;
+    padding:10px;
+    background-color:rgba(0,0,0,.6);
+    color:#FFF;
+    text-align: right;
+  }
+  .arrows{
+    width:40px;
+    height:40px;
+    background-color: #F2DCFF;
+    border-radius:50%;
+    position: absolute;
+    top:0;bottom:0;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor:pointer;
+  }
+  .arrows.left{left: 20px; }
+  .arrows.right{right: 20px; }
+
+  .arrows:hover{
+    background-color: #A000FE;
+  }
+  .arrows:after{
+    content:"";
+    width:20px;
+    height:20px;
+    border-right: solid 2px #FFF;
+    border-bottom: solid 2px #FFF;
+    position: absolute;
+    top:10px;
+    left:10px
+  }
+  .arrows.left:after{
+    transform: rotate(135deg)
+  }
+  .arrows.right:after{
+    transform: rotate(-45deg)
+  }
 
 
+.slide-nav{
+  padding-left: 0;
+  margin:0;
+  list-style: none;
+  position: absolute;
+  bottom:20px;
+  left:0;right:0;
+  text-align: center;
+}
 
-
-
+.slide-nav li{
+  display: inline-block;
+  padding:0 6px;
+}
+.slide-nav li a{
+  display: block;
+  width:25px;
+  height:25px;
+  background-color: #E156FF;
+  border-radius: 50%;
+  text-decoration: none;
+  color:#FFF;
+  font-size:12px;
+  line-height: 25px;
+}
 
 
 
