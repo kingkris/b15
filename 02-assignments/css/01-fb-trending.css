@@ -1,0 +1,147 @@
+html{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-weight:400;
+}
+
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+
+a{
+	color:#3b5998;
+	text-decoration: none;
+}
+a:hover{
+	color:#275BC8;
+}
+
+
+/*----------  Layout Styles  ----------*/
+
+.one-half{
+	width: 50%;
+	float: left;
+	min-height: 100vh
+}
+.img-wrap{
+	background-color: #EDD3FF;
+	text-align: center;
+}
+.markup-wrap{
+	background-color: #e9eaed;
+}
+.section-title{
+	text-align: center;
+	border-bottom: solid 3px #DA9A00;
+	color:#DA9A00;
+}
+
+.see-more{
+	font-size: 13px;
+	color: #6d84b4;
+	padding-left: 15px;
+	position: relative;
+}
+.see-more:before{
+	content:"";
+	border-style: solid;
+	border-width: 5px;
+	border-color: #6d84b4 transparent transparent transparent;
+	position: absolute;
+	width:0;
+	height:0;
+	left:0;
+	top:5px;
+}
+
+/*----------  Sidebar  ----------*/
+
+.sidebar{
+	border: solid 1px #dfe0e4;
+	background-color: #fff;
+
+	width:280px;
+	margin:0 auto;
+	padding: 12px;
+}
+
+.widget{
+	border-bottom: solid 1px #e9eaed;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.title:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.title h2{
+	font-size: 12px;
+	color: #9197a3;
+	text-transform: uppercase;
+	margin:0 0 10px;
+	float: left;
+}
+.title a{
+	float: right;
+	font-size: 13px;
+	color: #6d84b4;
+}
+
+.news-list{
+	margin:0;
+	padding-left: 0;
+	list-style: none;
+}
+.news-list li{
+	background-image: url('../img/arrow.png');
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+	padding-left: 22px;
+	margin-bottom: 10px;
+}
+.news-list li a{
+	font-size:13px;
+	color: #9197a3;
+}
+.news-list li a strong{
+	font-size:13px;
+	color: #3b5998;
+}
+.news-list li a:hover strong{
+	text-decoration: underline;
+}
+
+/*----------  people styles  ----------*/
+
+.people{
+	border: dashed 1px red;
+	margin-bottom: 10px;
+}
+.people:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+.people img{
+	float: left;
+}
+.people .details{
+	border: dotted 1px blue;
+	margin-left: 55px;
+}
+
+
+
+
