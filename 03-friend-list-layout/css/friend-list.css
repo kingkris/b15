@@ -1,0 +1,62 @@
+html{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-weight:300;
+}
+
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+
+
+
+
+
+/*----------  close btn  ----------*/
+
+.close{
+	width:20px;
+	height:20px;
+	border: solid 1px #666;
+	position: absolute;
+	right:15px;
+	top:15px;
+	cursor: pointer;
+}
+.close:hover{
+	border-color: #000;
+}
+.close:after,
+.close:before{
+	content:"";
+	width:90%;
+	height:2px;
+	background-color: #666;
+	position: absolute;
+	left:1px;
+	top:8px;
+}
+.close:hover:after,
+.close:hover:before{
+	background-color: #000;
+}
+.close:after{
+	transform:rotate(45deg)
+}
+.close:before{
+	transform:rotate(-45deg)
+}
+
+
+
+

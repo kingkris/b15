@@ -31,12 +31,15 @@ a:hover{
 
 .one-half{
 	width: 50%;
-	float: left;
+	float: right;
 	min-height: 100vh
 }
 .img-wrap{
 	background-color: #EDD3FF;
 	text-align: center;
+	position:fixed;
+	left:0;
+	top:0;
 }
 .markup-wrap{
 	background-color: #e9eaed;
@@ -104,6 +107,7 @@ a:hover{
 	padding-left: 0;
 	list-style: none;
 }
+/* Icon using Background Image
 .news-list li{
 	background-image: url('../img/arrow.png');
 	background-repeat: no-repeat;
@@ -111,7 +115,29 @@ a:hover{
 	padding-left: 22px;
 	margin-bottom: 10px;
 }
-.news-list li a{
+*/
+/*----------  Using Sprite  ----------*/
+.news-list li{
+	padding-left: 22px;
+	margin-bottom: 10px;
+	border: dashed 1px red;
+	position: relative;
+}
+.news-list li:before{
+	content:"";
+	width:20px;
+	height:20px;
+	border: dotted 1px green;
+	position:absolute;
+	left:0;
+	top:4px;
+	background-image: url('../img/7yDq_urTkm0.png');
+	background-repeat: no-repeat;
+	background-position: -289px -273px;
+}
+
+
+ .news-list li a{
 	font-size:13px;
 	color: #9197a3;
 }
@@ -129,6 +155,9 @@ a:hover{
 	border: dashed 1px red;
 	margin-bottom: 10px;
 }
+.people *{
+	border: dashed 1px red;
+}
 .people:after{
 	content:"";
 	display: block;
@@ -138,10 +167,38 @@ a:hover{
 	float: left;
 }
 .people .details{
-	border: dotted 1px blue;
 	margin-left: 55px;
 }
 
+.btn{
+	display:inline-block;
+	border: solid 1px #444;
+	line-height: 24px;
+	padding:0 10px 0 25px;
+	border-radius: 4px;
+	background-image: url('../img/arrow.png');
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	font-weight:400;
+	font-size:13px;
+	color:#444
+}
+.feedback-btn{
+	border: solid 1px #444;
+	line-height: 24px;
+	padding:0 10px 0 25px;
+	border-radius: 4px;
+	background-image: url('../img/arrow.png');
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	font-weight:400;
+	font-size:13px;
+	color:#FFF;
+	background-color:#E500C7;
+	position:fixed;
+	right:0;
+	bottom:0
+}
 
 
 
