@@ -216,6 +216,17 @@ body{
   background-repeat: no-repeat;
   background-position: center bottom ,0 0;
 }
+.demo8{
+  width:600px;
+  height:400px;
+  padding:50px;
+  border: solid 5px rgba(0,0,0,.6);
+  background-color: #fff;
+  margin:25px auto;
+  background-image:  url('../images/horse.jpg');
+  background-repeat: no-repeat;
+  background-position:100% 100%;
+}
 /*----------  Gradient Demo  ----------*/
 
 .grad-demo{

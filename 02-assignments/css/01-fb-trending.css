@@ -100,6 +100,25 @@ a:hover{
 	float: right;
 	font-size: 13px;
 	color: #6d84b4;
+	padding-right: 25px;
+	position: relative;
+}
+.title a:before{
+	content:"";
+	width:11px;
+	height:7px;
+	border: solid 1px red;
+	background-image: url(../img/7yDq_urTkm0.png);
+	background-repeat: no-repeat;
+	background-position: -484px -156px;
+	transition: all 250ms ease;
+	position: absolute;
+	right:10px;
+	top:4px;
+}
+.title a:hover:before{
+	transform:rotate(-90deg);
+	right:0;
 }
 
 .news-list{
@@ -120,14 +139,12 @@ a:hover{
 .news-list li{
 	padding-left: 22px;
 	margin-bottom: 10px;
-	border: dashed 1px red;
 	position: relative;
 }
 .news-list li:before{
 	content:"";
-	width:20px;
+	width:15px;
 	height:20px;
-	border: dotted 1px green;
 	position:absolute;
 	left:0;
 	top:4px;
