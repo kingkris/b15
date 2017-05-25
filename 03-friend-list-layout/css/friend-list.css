@@ -2,6 +2,7 @@
 
 @import url('normalize.css');
 @import url('font-awesome.css');
+@import url('b15cons.css');
 
 html{
   font-family: 'Roboto', sans-serif;
@@ -70,3 +71,37 @@ h6{
 	border: solid 1px red;
 	color:#DEB200
 }
+
+
+.logo{
+	font-size:120px;
+	text-align: center;
+	margin: 20px;
+	color:royalblue
+}
+
+
+/*----------  customising Icon  ----------*/
+
+.container{
+	width:1000px;
+	padding: 15px;
+	margin:20px auto;
+}
+
+.title{
+	text-align: center;
+	font-size:60px;
+	position: relative;
+	padding-bottom: 70px;
+}
+.title:before{
+	position: absolute;
+	bottom: 0;
+	left:0;
+	right:0;
+	font-size:120px;
+	line-height: 80px;
+	color:#999;
+}
+
