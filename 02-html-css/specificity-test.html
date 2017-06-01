@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CSS, Me and Web</title>
+	<meta name="Author" content="KriShne Gowda">
+	<meta name="Agency" content="Dzineden">
+	<meta name="description" content="Dzineden">
+
+	<link rel="shortcut icon" href="favicon.ico">
+
+<style>
+	#site-title{color: orange}
+	.heading{color:crimson;}
+	*{color: green;}
+	h1{color: blue !important;}
+	.heading{color:indigo;}
+
+	.site-header + hr {
+		width: 75%;
+		margin: 10px auto;
+		height: 1px;
+		border-color: red;
+	}
+
+	.dabba h2 ~ h3{
+		color: crimson;
+		border-bottom-style: solid;
+	}
+
+</style>
+
+
+</head>
+<body>
+<header class="site-header">
+	<h1>Site Title</h1>
+	<h1 class="heading">Site Title with class</h1>
+	<h1 class="heading" id="site-title">Site Title with class and id</h1>
+	<h1 class="heading" id="site-title" style="color:red">Site Title with class and id - style attribute</h1>
+</header>
+<hr>
+<h1>This is another heading, outside header tag</h1>
+<hr>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi magnam qui fugit culpa tenetur, quis repellat vero totam quibusdam laborum. Ducimus ab earum, tenetur sapiente officia debitis enim aliquid repellat!</p>
+<h1>One more heading</h1>
+<div class="dabba">
+	<h2>Sub heading</h2>
+	<h3>another heading</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum magnam expedita, amet ipsum porro maxime, tempore repellendus, non maiores eos vel! Omnis quaerat, cumque aut maiores sequi quas ea autem.</p>
+	<h3>another heading</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus deleniti voluptatem repudiandae, voluptatum, esse sunt architecto sed at nobis, dicta consequatur veritatis nostrum quisquam in illum. Nostrum, itaque maiores alias!</p>
+	<h3>one more h3</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi doloribus error eos quis, dicta debitis nobis non, sed voluptatibus quae tenetur, ex distinctio voluptatum neque repellat eligendi eius nesciunt fugit!</p>
+</div>
+<hr>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam corrupti quis laboriosam tempore inventore aliquid reiciendis eos similique fugiat, temporibus reprehenderit, harum doloremque suscipit recusandae. Voluptates aspernatur voluptas dolorem non?</p>
+
+
+</body>
+</html>
