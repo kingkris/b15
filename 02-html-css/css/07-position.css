@@ -311,9 +311,47 @@ div.demo3.green{
 
 
 
+/*----------  Tilted banner  ----------*/
 
-
-
-
+.tilted-banner{
+  background-color: #F3FB98;
+  min-height: 460px;
+  position: relative;
+}
+.img-wrap img{
+  width:100%;
+  height:auto;
+}
+.tilted{
+  border: solid 3px red;
+  position: absolute;
+  transform:rotate(45deg);
+  overflow:hidden;
+  top:0; bottom:0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.tilted-small{
+  width:100px;
+  height:100px;
+}
+.tilted-large{
+  width:200px;
+  height:200px;
+}
+.tilted .content{
+  transform:rotate(-45deg) scale(1.32)
+}
+.tilted-1{
+  left:16%;
+}
+.tilted-2{
+  right:0; left:0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tilted-3{
+  right:16%;
+}
 
 
