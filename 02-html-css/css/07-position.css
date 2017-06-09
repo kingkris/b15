@@ -355,3 +355,33 @@ div.demo3.green{
 }
 
 
+
+.box{
+  border: dashed 1px red;
+  margin:15px auto;
+  background-color: #EEE6FA;
+  padding:10px
+}
+@media (min-width:768px) {
+  .box{width:740px; }
+}
+@media (min-width:980px) {
+  .box{width:940px; }
+}
+@media (min-width:1200px) {
+  .box{width:1170px; }
+}
+.box figure{
+  border: dotted 1px red;
+  background-color: #fff;
+  margin:0;
+}
+.box figcaption{
+  border: dotted 1px red;
+  background-color: #D9C1E0;
+}
+.box figure img{
+  display: block;
+  width:100%;
+  height:auto;
+}
