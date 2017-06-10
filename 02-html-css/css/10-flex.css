@@ -1,0 +1,146 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+ Flex Rules
++++++++++++++++++++++++++++++++++++++++++++
+
+display: flex | inline-flex
+flex-direction: row | column | row-reverse | column-reverse
+flex-wrap: nowrap  | wrap | wrap-reverse
+justify-content: flex-start | flex-end | center | space-between | space-around
+align-items: flex-start | flex-end | center | baseline | stretch
+align-content: flex-start | flex-end | center | space-between | space-around | stretch
+
+
+
+flex-grow : 
+flex-shrink :
+flex-basis : <width> | fill | max-content | min-content | fit-content | content | 
+
+Shorthand is flex: [flex-grow] [flex-shrink] [flex-basis]
+
+
+
+
+
+Some important links
++++++++++++++++++++++++++++++++++++++++++++
+
+http://bennettfeely.com/flexplorer/
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+https://webdesign.tutsplus.com/articles/15-inspiring-examples-of-css-animation-on-codepen--cms-23937
+
+https://flexbox.webflow.com/#collectiongrid
+
+*/
+
+/* ==========================================================================
+   Demo of Flex related properties
+   ========================================================================== */
+
+*,
+*:after,
+*:before{
+  box-sizing: border-box;
+}
+
+
+
+.parent{
+  border: solid 4px red;
+  padding: 10px
+}
+.parent > div,
+.parent > span{
+  border: solid 2px green;
+  margin:10px 0;
+  display: inline-block;
+  width:100px;
+}
+
+.parent1{
+  border: solid 4px red;
+  padding: 10px;
+  width:300px;
+  margin:0 auto;
+}
+.parent1:after{
+  content:"";
+  display: block;
+  clear: both;
+}
+.parent1 > div,
+.parent1 > span{
+  border: solid 2px green;
+  margin:10px 0;
+  float: left;
+  width:100px
+}
+
+.parent2{
+  border: solid 3px red;
+  padding:10px;
+  width:500px;
+  margin:0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content:flex-end
+}
+
+/* justify-content: flex-start | flex-end | center | space-between | space-around
+align-items: flex-start | flex-end | center | baseline | stretch
+align-content: flex-start | flex-end | center | space-between | space-around | stretch
+
+
+ */
+
+.parent2>div,
+.parent2 > span{
+  border: solid 2px green;
+  margin:10px 0;
+  padding:5px;
+  width:33.333%;
+  flex: 1 0 auto;
+}
+.parent2 img{
+  width:100%
+}
+
+
+
+
+
+.parent3{
+  border: solid 3px red;
+  padding:10px;
+  width:400px;
+  margin:0 auto;
+  display: flex;
+  flex-wrap:wrap
+}
+
+.parent3>div,
+.parent3 > span{
+  border: solid 2px green;
+  margin:10px 0;
+  padding:5px;
+  flex-grow:1 ;
+  flex-shrink:0 ;
+  flex-basis:120px ;
+}
+.parent3 img{
+  width:100%
+}
