@@ -1,0 +1,147 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+  Rules
++++++++++++++++++++++++++++++++++++++++++++
+
+    column-count:3;
+    column-width:500px;
+
+
+shorthand property
+columns : [column-width] [column-count]
+
+
+    column-count: here you specify the number of columns you want to apply to the element.
+    column-width: the width of a single column. Be aware that this value will probably be changed by the browser.
+    column-gap: the width of the gap between the columns.
+    column-rule-width: the rule part is kind of a border for your columns and in here you specify the width of that border.
+    column-rule-style: also like the border, if you need to specify the style.
+    column-rule-color: here the color of the rule.
+    column-span: the value in here will tell the browser how many columns you want an element to span, this is good for headings and works like colspan and rowspan in tables.
+
+
+
+
+Some important links
++++++++++++++++++++++++++++++++++++++++++++
+https://www.thoughtco.com/using-css-columns-instead-of-floats-4053898
+
+https://www.webdesignerdepot.com/2013/03/how-to-use-css3-columns/
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/column-fill
+
+
+Grids
+-----------------------
+http://caniuse.com/#feat=css-grid
+
+https://www.w3.org/TR/css3-grid-layout/
+
+https://blogs.msdn.microsoft.com/ie/2011/04/14/ie10-platform-preview-and-css-features-for-adaptive-layouts/
+
+https://css-tricks.com/snippets/css/complete-guide-grid/
+
+
+CSS NAming
+------------------------
+http://getbem.com/naming/
+
+https://www.sitepoint.com/title-css-simple-approach-css-class-naming/
+
+http://bdavidxyz.com/blog/how-to-name-css-classes/
+
+https://blog.toughbyte.com/blabla-9fd86eae4e6c
+
+https://medium.com/@drublic/css-naming-conventions-less-rules-more-fun-12af220e949b
+
+https://zellwk.com/blog/css-architecture-1/
+
+
+
+
+
+*/
+
+/* ==========================================================================
+   Demo of Columns related properties
+   ========================================================================== */
+
+*,
+*:after,
+*:before{
+  box-sizing: border-box;
+}
+body{margin:0}
+.columns{
+  padding: 15px;
+  border: solid 1px #CCC;
+  border-radius:10px;
+  transition:all 250ms ease;
+}
+@media (min-width:768px) {
+  .columns{
+    width:748px;
+    margin-left: auto;
+    margin-right: auto;
+    column-count:2
+  }
+}
+@media (min-width:980px) {
+  .columns{
+    width:960px;
+    column-count:3
+  }
+}
+@media (min-width:1200px) {
+  .columns{
+    width:1170px;
+    column-count:4;
+    column-gap:30px;
+    column-rule: dotted 1px red;
+    column-fill:balance;
+  }
+}
+
+.parent1,
+.parent2{
+  width:1000px;
+  margin-left: auto;
+  margin-right: auto;
+  border: dotted 1px #CCC;
+  padding:10px;
+}
+.parent1 .item,
+.parent2 .item{
+  border: solid 1px #CCC;
+  padding:10px;
+}
+
+
+
+.parent2{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.item1{
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.item2{
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.item6{
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
