@@ -145,3 +145,31 @@ body{margin:0}
   grid-column-start: 2;
   grid-column-end: 5;
 }
+
+
+
+
+
+
+/*----------  Video wrapp  ----------*/
+.video-wrap{
+  margin:20px 0;
+  clear: both;
+  position: relative;
+}
+.video-wrap video{
+ width:100%;
+}
+.video-wrap .text{
+  position: absolute;
+  left:200px;
+  top:200px;
+  background-color: rgba(0,0,0,.6);
+  color:#FFF;
+  padding:20px;
+  width:260px;
+
+}
+
+
+
