@@ -254,5 +254,66 @@ inherit;
 }
 
 
+/*----------  widget  ----------*/
 
+.row1{
+    margin:30px auto;
+    max-width:1000px;
+    border: dotted 1px #CCC;
+    padding:10px;
+    background-color: #F5F3F3;
+}
 
+.widget{
+    border: solid 1px #DEDEDE;
+}
+.widget .title{
+   background-color: #2864DD;
+}
+.widget .title:after{
+   content:"";
+   display: block;
+   clear: both;
+}
+.widget .title h2{
+   color:#FFF;
+   margin:0 55px 0 0;
+   line-height: 40px;
+   font-size:20px;
+   padding-left: 20px;
+   border: solid 1px red;
+   white-space:nowrap;
+   overflow:hidden;
+   text-overflow:ellipsis;
+   position: relative;
+}
+.widget .title h2:hover:after{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    background-color: #2864DD;
+    color:#FFF;
+    padding:3px 10px;
+    font-size:11px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    content: attr(data);
+    white-space:normal;
+    overflow:visible;
+    text-overflow:clip;
+}
+.close{
+    width:30px;
+    height:30px;
+    float: right;
+    margin: 5px 20px 0 0;
+    background-color: #fff;
+    border-radius:50%;
+    border: solid 1px red;
+}
+.content{
+    background-color: #fff;
+    padding:10px
+}

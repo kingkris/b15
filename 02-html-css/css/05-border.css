@@ -172,3 +172,36 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
 .r10{ border-radius: 0 100% 0 0; }
 
 
+
+/*----------  Border images  ----------*/
+
+.new-baaax{
+    width:200px;
+    height:200px;
+    padding:20px;
+    background-color: #DFDBDB;
+    background-clip: padding-box;
+    background-origin: padding-box;
+    border-radius:25%;
+    margin:30px auto;
+    border-style: solid; 
+    border-width: 25px; 
+    -moz-border-image: url(http://www.w3.org/TR/css3-background/border.png) 26 round; 
+    -webkit-border-image: url(http://www.w3.org/TR/css3-background/border.png) 26 round; 
+    -o-border-image: url(http://www.w3.org/TR/css3-background/border.png) 26 round; 
+    border-image: url(http://www.w3.org/TR/css3-background/border.png) 26 fill round;
+}
+
+.new-baaax1{
+    width:200px;
+    height:200px;
+    padding:20px;
+    background-color: #673ab7;
+    background-clip: padding-box;
+    background-origin: padding-box;
+    margin:30px auto;
+    border-style: solid; 
+    border-width: 20px; 
+    border-image: url('../images/bd-image-1.png') 20 fill  round stretch;
+}
+
