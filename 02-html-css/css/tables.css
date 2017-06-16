@@ -1,0 +1,150 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+table related style properties
++++++++++++++++++++++++++++++++++++++++++++
+
+border-collapse
+border-spacing
+empty-cells – show | hide
+
+
+auto;
+inherit;
+
+table related important links
++++++++++++++++++++++++++++++++++++++++++++
+
+https://developer.mozilla.org/en/docs/Web/CSS/background-color
+*/
+
+/* ==========================================================================
+   Demo of Position related properties
+   ========================================================================== */
+
+.red    {background-color: red;}
+.blue   {background-color: blue;}
+.green  {background-color: green;}
+.crimson{background-color: crimson;}
+.violet {background-color: violet;}
+.orange {background-color: orange;}
+.yellow {background-color: yellow;}
+.indigo {background-color: indigo;}
+
+/*----------  POsition Static  ----------*/
+
+
+
+.mytbl{
+  border: solid 1px red;
+  border-collapse:collapse;
+  width: 90%;
+  margin: 10px auto;
+  empty-cells:hide;
+}
+.mytbl caption{
+  border-bottom: solid 4px red;
+  background-color: #FEA2A2;
+  line-height: 40px;
+  margin-top: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.mytbl th,
+.mytbl td{
+  border: solid 1px red;
+}
+.mytbl td{
+  padding: 4px
+}
+.mytbl th{
+  background-color: #4303FC;
+  color:#FFF;
+}
+
+.mytbl tr:nth-child(odd){
+  background-color: #EBE5FF;
+}
+.mytbl tr:nth-child(even){
+  background-color: #FFD8F9;
+}
+.mytbl tr:hover{
+  background-color: #F411D1;
+  color:#FFF;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.mytbl2{
+  border: solid 1px red;
+  border-collapse:separate;
+  border-spacing: 3px;
+  width: 90%;
+  margin: 10px auto;
+  empty-cells:hide;
+  border-radius:10px;
+}
+.mytbl2 caption{
+  border-bottom: solid 4px red;
+  background-color: #FEA2A2;
+  line-height: 40px;
+  margin-top: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.mytbl2 th,
+.mytbl2 td{
+  border: solid 1px red;
+}
+.mytbl2 th{
+  background-color: #4303FC;
+  color:#FFF;
+}
+
+
+.exercise-tbl{
+  border: solid 1px #DDDDDD;
+  border-collapse:collapse;
+  border-spacing: 0;
+  width: 90%;
+  margin: 10px auto;
+  empty-cells:hide;
+}
+.exercise-tbl caption{
+  border-bottom: solid 4px #1B99E1;
+  background-color: #9CCEEA;
+  line-height: 60px;
+  margin-top: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.exercise-tbl th{
+  background-color: #054D76;
+  color:#FFF;
+  padding:5px 10px;
+  border: solid 1px #0F78B4;
+}
+.exercise-tbl td{
+  border: solid 1px #CCC;
+  padding:5px 10px
+}
+.exer-sl{width:30px}
+.exer-name{width:160px}
+.exer-photo{width:100px}
+.exer-desc{}
+.exer-diff{width:100px}
+
+
+
