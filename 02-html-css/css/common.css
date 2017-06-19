@@ -54,3 +54,38 @@ h6 {
 
 
 
+/*----------  menu  ----------*/
+
+.menu{
+	width: 30px;
+	position: absolute;
+	top:40px;
+	right:40px;
+	float: right;
+	height:30px;
+	border-radius:5px;
+	background-color: #B20606;
+	cursor: pointer;
+}
+@media (max-width:767px){
+	.site-header nav{
+		position: absolute;
+		width:250px;
+		top:70px;
+		right:10px;
+		z-index: 100;
+		background-color: #fff;
+		display: none;
+	}
+	.site-header nav a{
+		padding: 0 10px
+	}
+}
+@media (min-width:768px) {
+	.menu{
+		display: none;
+	}
+	.site-header nav{
+		display: block;
+	}
+}
