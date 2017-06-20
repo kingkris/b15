@@ -1,0 +1,204 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+Border related style properties
++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+~  border-width -
+    ^ default value 3px - normal
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+
+~  border-style: none solid dotted dashed 
+                  double ridge groove inset outset
+    ^ default value none
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+
+~  border-color: 
+    ^ default value is color of text
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+
+border-top-style: ;
+border-top-width: ;
+border-top-color: ;
+
+border-right-style: ;
+border-right-width: ;
+border-right-color: ;
+
+border-bottom-style: ;
+border-bottom-width: ;
+border-bottom-color: ;
+
+border-left-style: ;
+border-left-width: ;
+border-left-color: ;
+
+Shorthand property
+border-top: [border-top-style border-top-width border-top-color]
+border-right: [border-right-style border-right-width border-right-color]
+border-bottom: [border-bottom-style border-bottom-width border-bottom-color]
+border-left: [border-left-style border-left-width border-left-color]
+
+
+Shorthand property
+border: [border-style border-width border-color]
+
+
+
+~  border-radius – length or percentage-
+    ^ default value is auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+
+border-image:
+
+border-collapse
+border-spacing
+empty-cells – show | hide
+
+
+
+
+auto;
+inherit;
+
+Background related important links
++++++++++++++++++++++++++++++++++++++++++++
+
+https://developer.mozilla.org/en/docs/Web/CSS/background-color
+*/
+
+/* ==========================================================================
+   Demo of Border related properties
+   ========================================================================== */
+
+.page-heading{
+    line-height: 200px;
+    
+    border-style: solid;
+    border-width: 25px;
+    border-color: red green blue;
+    position: relative;
+}
+.page-heading:after{
+    content:"";
+    width:0;
+    height:0;
+    border-style: solid solid none;
+    border-width: 15px;
+    border-color: blue transparent transparent transparent;
+    position: absolute;
+    bottom: -40px;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page-heading:before{
+    content:"";
+    width:8px;
+    height:8px;
+    border-top: solid 1px red;
+    border-right: solid 1px red;
+    position: absolute;
+    top: -30px;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(-45deg)
+}
+
+
+
+
+
+.content-edit{
+  border: 1px solid #444;
+  margin: 5px;
+  padding:10px
+}
+
+.form{
+  background-color: #CFD5FF;
+  padding:20px;
+  min-height:300px;
+}
+.form > div{
+  width:600px;
+  margin:0 auto;
+}
+.form-row{
+  padding:10px;
+  margin-bottom: 10px;
+  border-bottom: dotted 1px #FFF;
+}
+.form-row-last{
+  padding:10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.inner-row{
+  padding:5px;
+  font-size: 13px;
+  color:#666;
+}
+
+.txt-area{
+  border: 1px solid #666;
+  width:400px;
+  resize:none
+}
+
+.form-wrap{
+    width:400px;
+    min-height:200px;
+    padding:5px;
+    background-color: #673ab7;
+    background-clip: content-box;
+    background-origin: content-box;
+    margin:30px auto;
+    border-style: solid; 
+    border-width: 20px; 
+    border-image: url('../images/bd-image-1.png') 20 fill  round;
+}
+.roww{
+  padding:10px;
+  border-bottom: dotted 1px #FFF;
+  margin: 0 20px 10px;
+}
+.roww label{
+  width:80px;
+  text-align: right;
+  display: inline-block;
+}
+.roww label:after{
+ content:": "
+}
+.input-txt{
+  border: 1px solid #D5D5D5;
+  border-radius:5px;
+  padding:4px 6px;
+  color:#444;
+  width:220px;
+  margin-left: 10px;
+}
+
+

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CSS, Me and Web</title>
+	<meta name="Author" content="KriShne Gowda">
+	<meta name="Agency" content="Dzineden">
+	<meta name="description" content="Dzineden">
+
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/forms.css">
+	<link rel="shortcut icon" href="favicon.ico">
+
+</head>
+<body>
+
+<header class="site-header">
+	<h1><a href="index.html">Me, CSS &amp; Web</a></h1>
+	<nav>
+		<ul class="site-links">
+			<li><a href="01-type.html">Type</a></li>
+			<li><a href="02-block.html">Block</a></li>
+			<li><a href="03-list.html">List</a></li>
+			<li><a href="04-background.html">Background</a></li>
+			<li class="selected"><a href="05-border.html">Border</a></li>
+			<li><a href="06-box.html">Box</a></li>
+			<li><a href="07-position.html">Position</a></li>
+			<li><a href="08-at-rules.html">@ Rules</a></li>
+			<li><a href="09-animation.html">Animation</a></li>
+			<li><a href="10-flex.html">Flex</a></li>
+			<li><a href="11-grids.html">Grids</a></li>
+			<li><a href="12-video-audio.html">Video, Audio, Canvas</a></li>
+			<li><a href="13-responsive-layouts.html">Responsive Layouts</a></li>
+		</ul>
+	</nav>
+</header>
+<div class="container">
+	<h1 class="page-heading">Forms</h1>
+	<hr>
+	<form action="thankyou.html" method="post">
+		<div class="form-row">
+			<input type="text" name="Name" placeholder="Enter your name" id="f1Name">
+			<input type="text" name="Emailid" placeholder="Enter your Email" id="f1Email">
+			<input type="submit" value="Submit">
+		</div>
+	</form>
+
+
+
+<hr>
+
+<form action="thank-you.html" method="get" name="demo-form" class="form">
+	<div>
+		<fieldset>
+			<legend>Fieldset, label</legend>
+			<div class="form-row">
+				<label for="df-name">Name</label>
+				<input type="text" id="df-name">
+			</div>
+			<div class="form-row">
+				<label>Name</label>
+				<input type="text">
+			</div>
+			<div class="form-row">
+				<label>Rememebr password</label>
+				<input type="checkbox">
+			</div>
+			<div class="form-row">
+				<label for="df-chk">Rememebr password</label>
+				<input type="checkbox" id="df-chk">
+			</div>
+			<div class="form-row">
+				<label>Rememebr password
+				<input type="checkbox"></label>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Input Tag</legend>
+			<div class="form-row">
+				<label for="df-name1">Enter Your Name</label>
+				<input type="text" name="DFName" id="df-name1" value="KriShne Gowda" placeholder="Enter your name">
+			</div>
+			<div class="form-row">
+				<label for="df-pass">Enter Your Password</label>
+				<input type="password" name="DFPass" id="df-pass"  placeholder="Enter your Password">
+			</div>
+			<div class="form-row">
+				<p>Preferred Course</p>
+				<div class="inner-row">
+					<input type="radio" name="DFBatch" id="df-rdio1" value="Morning" >
+					<label for="df-rdio1">Morning Batch</label>
+				</div>
+				<div class="inner-row">
+					<input type="radio" name="DFBatch" id="df-rdio2" value="Afternoon" >
+					<label for="df-rdio2">Afternoon Batch</label>
+				</div>
+				<div class="inner-row">
+					<input type="radio" name="DFBatch" id="df-rdio3" value="Evening" >
+					<label for="df-rdio3">Evening Batch</label>
+				</div>
+				<div class="inner-row">
+					<input type="radio" name="DFBatch" id="df-rdio4" value="weekend" >
+					<label for="df-rdio4">weekend Batch</label>
+				</div>
+			</div>
+			<div class="form-row">
+				<p>Preferred Subjects</p>
+				<div class="inner-row">
+					<input type="checkbox" name="DFsubject" id="df-chk1" value="html5" >
+					<label for="df-chk1">HTML5</label>
+				</div>
+				<div class="inner-row">
+					<input type="checkbox" name="DFsubject" id="df-chk2" value="CSS3" checked >
+					<label for="df-chk2">CSS3</label>
+				</div>
+				<div class="inner-row">
+					<input type="checkbox" name="DFsubject" id="df-chk3" value="jquery" disabled >
+					<label for="df-chk3">jquery</label>
+				</div>
+				<div class="inner-row">
+					<input type="checkbox" name="DFsubject" id="df-chk4" value="wordpress" required>
+					<label for="df-chk4">wordpress</label>
+				</div>
+				<div class="inner-row">
+					<input type="checkbox" name="DFsubject" id="df-chk5" value="Less" >
+					<label for="df-chk5">Less</label>
+				</div>
+				<div class="inner-row">
+					<input type="checkbox" name="DFsubject" id="df-chk6" value="Less" >
+					<label for="df-chk6">Less</label>
+				</div>
+			</div>
+			<div class="form-row">
+				<label for="df-photo">Upload your photo</label>
+				<input type="file" name="DFPass" id="df-photo">
+			</div>
+			<div class="form-row">
+				<label for="df-message">Message</label>
+				<textarea name="df-message" placeholder="placholder text here" class="txt-area">You can write what ever text to be prefilled here</textarea>
+
+			</div>
+
+			<div class="form-row-last">
+				<input type="hidden" name="df-page" value="webdesign">
+				<input type="submit" value="Lets Check!">
+				<input type="image" src="images/icon-help.png" >
+				<input type="button" name="" value="Dummy button">
+				<input type="reset" name="" value="Reset">
+			</div>
+		</fieldset>
+	</div>
+</form>
+
+
+
+<hr><hr><hr>
+<div class="form-wrap">
+	<form action="thankyou.html" method="post">
+		<div class="roww">
+			<label for="abc">Name</label>
+			<input type="text" id="abc" name="Username" placeholder="Enter Username" class="input-txt">
+		</div>
+		<div class="roww">
+			<label for="abc">Name</label>
+			<input type="text" id="abc" name="Username" placeholder="Enter Username" class="input-txt">
+		</div>
+	</form>
+</div>
+
+
+
+
+</div>
+
+
+<footer class="site-footer">
+	
+</footer>
+
+
+</body>
+</html>
