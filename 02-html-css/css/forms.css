@@ -89,6 +89,9 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
    Demo of Border related properties
    ========================================================================== */
 
+*{
+  box-sizing: border-box;
+}
 .page-heading{
     line-height: 200px;
     
@@ -179,6 +182,46 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
     border-width: 20px; 
     border-image: url('../images/bd-image-1.png') 20 fill  round;
 }
+.asd{
+  padding: 20px;
+}
+.asd input{
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  font-family: inherit;
+  border-radius: 6px;
+  border: 1px solid #262727;
+}
+.asd a{
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #444;
+  text-decoration: none;
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+
+  border-radius: 4px;
+  border: 1px solid #CCC;
+
+  background: #eeeeee; /* Old browsers */
+  background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+.asd a:hover{
+
+  background: #cccccc; /* Old browsers */
+  background: linear-gradient(to bottom,  #cccccc 0%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.asd span{
+  color: #e53842;
+  font-size: 13px;
+  display: block;
+  margin-bottom: 14px;
+}
 .roww{
   padding:10px;
   border-bottom: dotted 1px #FFF;
@@ -200,5 +243,21 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
   width:220px;
   margin-left: 10px;
 }
+
+
+.my-select option{
+  font-size: 14px;
+  color: #1404aa;
+}
+.my-select option:checked{
+  color: #F00 !important;
+  background-color: #0f0;
+  text-transform: uppercase;
+}
+
+
+
+
+
 
 

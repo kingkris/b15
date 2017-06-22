@@ -46,6 +46,14 @@
 		</div>
 	</form>
 
+<div class="form-wrap">
+	<div class="asd">
+		<span></span>
+		<input type="text" name="asd" placeholder="Enter Your Name" >
+		<a href="#" class="mybtn">Let's see your luck today</a>
+
+	</div><!-- /.asd -->
+</div><!-- /.form-wrap -->
 
 
 <hr>
@@ -135,11 +143,82 @@
 				<label for="df-photo">Upload your photo</label>
 				<input type="file" name="DFPass" id="df-photo">
 			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Textarea, Select</legend>
+
 			<div class="form-row">
 				<label for="df-message">Message</label>
 				<textarea name="df-message" placeholder="placholder text here" class="txt-area">You can write what ever text to be prefilled here</textarea>
 
 			</div>
+			<div class="form-row">
+				<label for="df-select">Select City</label>
+				<select name="df-slect" id="df-select" multiple>
+					<option value="Bengaluru">Bengaluru</option>
+					<option value="Mysuru">Mysuru</option>
+					<option value="Mangaluru">Mangaluru</option>
+					<option value="Mandya">Mandya</option>
+					<option value="Hassan">Hassan</option>
+					<option value="Davanagere">Davanagere</option>
+				</select>
+			</div><!-- /.form-row -->
+			<div class="form-row">
+				<label for="df-select">Select City</label>
+				<select name="df-slect" id="df-select" class="my-select" multiple>
+					<option value="">Select Your City</option>
+					<optgroup label="Cities of Karanataka">
+						<option value="Bengaluru">Bengaluru</option>
+						<option value="Mysuru">Mysuru</option>
+						<option value="Mangaluru">Mangaluru</option>
+						<option value="Mandya">Mandya</option>
+						<option value="Hassan">Hassan</option>
+						<option value="Davanagere">Davanagere</option>
+					</optgroup>
+					<optgroup label="Other Cities">
+						<option value="Delhi">Delhi</option>
+						<option value="Hyedrabad">Hyedrabad</option>
+						<option value="Mohali">Mohali</option>
+						<option value="Chennai">Chennai</option>
+						<option value="Kolkatta">Kolkatta</option>
+						<option value="Trivendrum">Trivendrum</option>
+						<option value="Kochi">Kochi</option>
+					</optgroup>
+				</select>
+			</div><!-- /.form-row -->
+		</fieldset>
+		<fieldset>
+			<legend>html5 input types</legend>
+			<div class="form-row">
+				<label for="df-email">Email</label>
+				<input type="email" name="df-email" placeholder="" id="df-email" required maxlength="8">
+			</div><!-- /.form-row -->
+			<div class="form-row">
+				<label for="df-url">url</label>
+				<input type="url" name="df-url" placeholder="" id="df-url">
+			</div><!-- /.form-row -->
+
+			<div class="form-row">
+				<label for="df-age">age</label>
+				<input type="number" name="df-age" placeholder="" id="df-age" min="20" max="30">
+			</div><!-- /.form-row -->
+
+			<div class="form-row">
+				<label for="df-salary">Expected salary</label>
+				<input type="number" name="df-salary" placeholder="" id="df-salary" min="8000" max="50000" step="500">
+			</div><!-- /.form-row -->
+
+			<div class="form-row">
+				<label for="df-range">Price range</label>
+				<input type="range" name="df-range" id="df-range" min="8000" max="50000" step="500">
+			</div><!-- /.form-row -->
+
+			<div class="form-row">
+				<label for="df-dob">Date of Birth</label>
+				<input type="date" name="df-dob" id="df-dob">
+			</div><!-- /.form-row -->
+
+		</fieldset>
 
 			<div class="form-row-last">
 				<input type="hidden" name="df-page" value="webdesign">
@@ -148,7 +227,6 @@
 				<input type="button" name="" value="Dummy button">
 				<input type="reset" name="" value="Reset">
 			</div>
-		</fieldset>
 	</div>
 </form>
 
@@ -177,6 +255,28 @@
 <footer class="site-footer">
 	
 </footer>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+
+
+<script>
+	jQuery(document).ready(function($) {
+		$('.mybtn').click(function(event) {
+			event.preventDefault();
+			x = $('.asd input').val();
+			if (x) {
+				y = x + 'Lets see your luck today!';
+			} else {
+				y = x + 'Enter you name';
+			}
+				$('.asd span').text(y);
+		});
+	});
+
+
+</script>
+
 
 
 </body>
