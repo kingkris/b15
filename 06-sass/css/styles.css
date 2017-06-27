@@ -1,0 +1,24 @@
+/*----------  Colors  ----------*/
+/*----------  Fonts  ----------*/
+body {
+  margin: 0;
+  background-color: #ffcccc; }
+
+.site-header {
+  background-color: #990000;
+  color: white; }
+  .site-header h1 {
+    font-size: 40px;
+    font-family: "Slabo 27px";
+    font-weight: normal;
+    text-align: center; }
+  .site-header nav {
+    border-bottom: solid 4px red;
+    text-align: center; }
+    .site-header nav a {
+      color: white;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-decoration: none; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,66 @@
+@brandcolor: #FF00FF;
+@pagebg: lighten(@brandcolor, 40%);
+@hoverbg: lighten(@brandcolor, 30%);
+@headerbg: darken(@brandcolor, 30%);
+
+@textcolor: #444;
+@base-font-size:16px;
+
+
+
+body{
+	background-color: @pagebg;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: @base-font-size;
+	color: @textcolor;
+}
+
+
+.box{
+	border-radius:20px 0;
+	background-color: #fff;
+	padding:10px;
+	border: 1px solid #FFF;
+}
+
+
+
+.site-header{
+	background-color: @headerbg;
+	padding: 10px;
+	color:#FFF;
+	border-bottom: solid 10px @brandcolor;
+
+	h1{
+		color:#FFF;
+		text-align: center;
+		font-size:50px;
+		font-family:'Roboto Slab';
+		margin:20px 0;
+	}
+	nav{
+		text-align: center;
+
+		a{
+			display: inline-block;
+			.box;
+			text-decoration: none;
+
+			&:hover{
+				background-color: @hoverbg;
+				color:#FFF;
+			}
+		}
+	}
+}
+
+.banner{
+	width: 1000px;
+	margin:10px auto;
+
+	img{
+		width:100%;
+		.box;
+	}
+}
