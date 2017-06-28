@@ -1,9 +1,26 @@
 /*----------  Colors  ----------*/
-$primary-color: red;
+
+$orange: 				#EA7400;
+$blue:					#2E38C2;
+$red:						#CA2727;
+$gray:					#444;
+$lightgray:			#666;
+$darkgray:			#333;
+$verylightgray:	#999;
+$white:					#F1F1F1;
+
+
+
+
+$primary-color: $orange;
 $page-bg : lighten($primary-color, 40%);
 $header-bg: darken($primary-color, 20%);
-$header-txt-color: white;
+$header-txt-color: $white;
+$txt-color:	$gray;
 
 /*----------  Fonts  ----------*/
 $font-serif: 'Slabo 27px';
+
+
+$width: 10px !default;
 

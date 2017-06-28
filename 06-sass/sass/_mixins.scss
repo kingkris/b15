@@ -1,0 +1,61 @@
+
+@mixin radius{
+	border-radius:10px 0;
+}
+
+@mixin box{
+	width:10px;
+	height:10px;
+	background-color: $white;
+}
+@mixin square($width){
+	width:$width;
+	height:$width;
+	background-color: $orange;
+	margin:10px;
+}
+
+
+.message{
+	background-color: $white;
+	width:1000px;
+	margin:20px auto;
+	font-size:14px;
+	padding:10px 10px 10px 25px;
+	border-width: 1px;
+	border-style: solid;
+	position: relative;
+
+	&:before{
+		content:"";
+		@include box;
+		@include radius;
+		position: absolute;
+		left:10px;
+		top:15px;
+	}
+}
+
+.error{
+	@extend .message;
+	color:$red;
+	&:before{
+		background-color: $red;
+	}
+}
+.success{
+	@extend .message;
+	color:$blue;
+	&:before{
+		background-color: $blue;
+	}
+}
+.warning{
+	@extend .message;
+	color:$orange;
+	&:before{
+		background-color: $orange;
+	}
+}
+
+

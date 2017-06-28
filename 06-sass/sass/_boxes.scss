@@ -1,0 +1,16 @@
+
+.box1{
+	@include square(10px);
+}
+.box2{
+	@include square(100px);
+}
+.box3{
+	@include square(200px);
+}
+.box4{
+	@include square(300px);
+}
+.box5{
+	@include square($width);
+}
