@@ -6,3 +6,26 @@
 	font-family: "Roboto Slab", serif;
 }
 
+.spacer{
+	min-height:150px;
+	margin:50px 100px;
+	border-left: dotted 1px red;
+}
+
+
+.kg_bg-red{background-color: red;}
+.kg_bg-blue{background-color: blue;}
+.kg_bg-green{background-color: green;}
+.kg_bg-yellow{background-color: yellow;}
+.kg_bg-white{background-color: white;}
+
+.kg_box{
+	border: 1px solid #B8B8B8;
+	padding: 10px;
+	background-color: #F1DFFF;
+	min-height:50px;
+	margin:15px 0;
+	text-align: center;
+	line-height: 50px;
+	font-size:30px;
+}

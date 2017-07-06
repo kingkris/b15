@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/demo-01.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300|Zilla+Slab" rel="stylesheet"> 
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+<div class="container kg_bg-white">
+  <h1>A Simple Grid Demo</h1>
+  <div class="row">
+    <div class="col-xs-6 col-sm-3 col-md-4 kg_bg-red">Feature 1</div>
+    <div class="col-xs-6 col-sm-3 col-md-4 col-md-push-4 kg_bg-blue">Feature 2</div>
+    <div class="col-xs-6 col-sm-3 col-md-4 col-md-pull-4 kg_bg-green">Feature 3</div>
+    <div class="col-xs-6 col-sm-3 col-md-6 col-md-offset-3 kg_bg-yellow">Feature 4</div>
+  </div>
+</div>
+
+
+
+<div class="spacer"></div>
+
+<div class="container kg_bg-white">
+  <h1>Nested Columns</h1>
+  <div class="row">
+    <div class="col-sm-6 kg_bg-red">
+      <h2>Column 1</h2>
+      <div class="row">
+        <div class="col-xs-8 kg_bg-yellow">
+          sub column 1
+        </div>
+        <div class="col-xs-4 kg_bg-green">
+          sub column 2
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 kg_bg-blue">
+      <h2>Column 2</h2>
+
+    </div>
+  </div>
+</div>
+<div class="spacer"></div>
+
+<div class="container-fluid">
+  <h2>form demo</h2>
+  <div class="row">
+    <div class="col-sm-6 kg_bg-white">
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Remember me
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Sign in</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-sm-6 kg_bg-yellow">
+      <form class="form-inline">
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+          <div class="input-group">
+            <div class="input-group-addon">$</div>
+            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+            <div class="input-group-addon">.00</div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Transfer cash</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="spacer"></div>
+
+
+<div class="container kg_bg-white">
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="kg_box"></div>
+    </div>
+    <div class="col-xs-6">
+      <div class="kg_box"></div>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="kg_box">1</div>
+    </div>
+    <div class="col-sm-3">
+      <div class="kg_box">2</div>
+    </div>
+    <div class="col-sm-3">
+      <div class="kg_box">3</div>
+    </div>
+    <div class="col-sm-3">
+      <div class="kg_box">4</div>
+    </div>
+  </div>
+</div>
+<div class="spacer"></div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
