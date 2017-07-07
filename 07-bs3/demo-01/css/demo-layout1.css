@@ -1,0 +1,62 @@
+body{
+  background-color: #E7DCFA;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight:300;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: 'Zilla Slab', serif;
+  font-weight: 400;
+  color: #A2008D;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small,
+h6 .small,
+.h1 .small,
+.h2 .small,
+.h3 .small,
+.h4 .small,
+.h5 .small,
+.h6 .small {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+	transition:all 250ms ease;
+}
+
+
+.kg_box{
+	min-height:60px;
+}
+
+
+.kg_video{
+	background-color: #fff;
+}
