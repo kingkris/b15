@@ -294,6 +294,14 @@ body{background-color: #F8F8F8; }
   }
 }
 
+/*----------  Spacer  ----------*/
+
+
+.spacer{
+  min-height: 600px;
+  margin-left: 40px;
+  border-left: dotted 1px #C1B0FF;
+}
 
 
 
