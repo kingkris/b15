@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Developed by dzineden</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="KriShne Gowda NL">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/js-demo.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto+Slab" rel="stylesheet">
+
+
+</head>
+<body>
+
+<div class="bg-dark">
+
+<script>
+
+function generateRandom() {
+  min = 0;
+  max = 1;
+  return  Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function addNumbers() {
+  x = 20;
+  y = 30;
+  document.write('<p class="lead">');
+  document.write(x+y);
+  document.write('</p>');
+}
+
+function addNumber(i, j) {
+  x = i;
+  y = j;
+  document.write('<p class="lead">');
+  document.write(x+y);
+  document.write('</p>');
+}
+
+
+  markup1 = '<span>Won</span>';
+  markup2 = '<i>Lost</i>';
+
+  totalWon = 0;
+  totalLost = 0;
+  noWin = 0;
+  noGames = 0;
+
+
+  document.write('<div class="toss-game">');
+
+  for (i = 0; i < 10; i++) {
+    noGames++;
+
+    randomNumber = generateRandom();
+
+    if(randomNumber){
+      document.write(markup1);
+      noWin++;
+      totalWon++;
+    } else{
+      document.write(markup2);
+      noWin = 0;
+      totalLost++;
+    }
+  }
+  document.write('<p>Total number of Games - ' + noGames);
+
+  addNumbers();
+  addNumber(235, 5);
+  addNumber(212312312335, 5234234234);
+
+  for (var i = 1; i <= 10; i++) {
+    document.write('<div class="triangle">');
+    for(j = 1; j<= i; j++){
+
+      randomNumber = generateRandom();
+
+      document.write('<span>'+ (j + randomNumber) + '</span>');
+    }
+    document.write('</div>');
+  }
+
+
+
+  document.write('</div>');
+</script>
+
+
+
+</div>
+
+
+<div class="bg-light">
+  <div class="container">
+    <h1 class="section-heading">Services we offer</h1>
+    <div>
+      <div class="service icon-html5">
+        <i class="icon-html5"></i>
+        <h2>Web Design</h2>
+        <p>Some text which introduces the above feature crisply. do this copy keeping seo in mind using keywords.</p>
+      </div><!-- eo service -->
+      <div class="service icon-facebook">
+        <h2 id="title2"> <i class="icon-phone"></i> Digital <span>Marketing</span></h2>
+        <p>Some text which introduces the above feature crisply. do this copy keeping seo in mind using keywords.</p>
+      </div><!-- eo service -->
+      <div class="service icon-wordpress">
+        <h2>Wordpress Development</h2>
+        <p>Some text which introduces the above feature crisply. do this copy keeping seo in mind using keywords.</p>
+      </div><!-- eo service -->
+      
+    </div>
+  </div>
+</div>
+
+<script>
+  addNumbers();
+</script>
+<style>
+  .toss-game{
+    width: 600px;
+    margin:20px auto;
+    background-color: #E6F1FF;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  .toss-game:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .toss-game span,
+  .toss-game i{
+    width: 40px;
+    height: 40px;
+    margin:10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    float: left;
+    font-style: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .toss-game span{background-color: green; }
+  .toss-game i{background-color: red; }
+  .toss-game p{clear: both }
+  .bg-dark{padding:5px;}
+
+.triangle{
+  clear: both;
+  text-align: center;
+}
+.triangle:nth-child(odd){
+  background-color: #fff;
+}
+.triangle span{
+  float: none;
+  display: inline-block;
+  margin: 3px;
+}
+
+.lead{
+  clear: both;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #C709E9;
+  padding: 10px;
+  color: #FFF;
+}
+
+</style>
+
+<script src="js/vendor/jquery-3.1.1.min.js" ></script>
+<script>
+  $(document).ready(function() {
+    $('.section-heading').click(function(event) {
+      $(this).next().slideToggle();
+    });
+  });
+</script>
+
+</body>
+</html>
+
