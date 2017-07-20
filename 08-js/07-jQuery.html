@@ -22,91 +22,6 @@
 
 <div class="bg-dark">
 
-<script>
-
- // fruits = 'Mango';
-fruits = ['Mango', 'Apple', 'Banana', 'Pomegranate', 'Pineapple', 'Pappaya', 'Kiwi'];
-
- document.write('<p class="wrap">');
- document.write(fruits);
- document.write('</p>');
-
- document.write('<p class="wrap">');
- document.write(fruits[5]);
- document.write(' - ' + fruits.length);
- document.write('</p>');
-
- document.write('<ul class="wrap">');
- document.write('<li><b>Array as it was</b></li>');
-   for(i=0; i< fruits.length; i++){
-    document.write('<li>' + fruits[i] + '</li>');
-   }
- document.write('</ul>');
-
- fruits.pop();
- fruits.pop();
- fruits.pop();
- fruits.push('Jackfruit');
- fruits.push('Grapes');
- fruits.push('Almonds');
- fruits.push('Blue Berries');
-
-
- document.write('<ul class="wrap">');
- document.write('<li><b>Array after push and pop</b></li>');
-  fruits.forEach(function(item, index, array) {
-    document.write('<li>' + index + ' - ' + item + '</li>');
-  });
- document.write('</ul>');
-
- fruits.sort();
- document.write('<ul class="wrap">');
- document.write('<li><b>Array after sorting it</b></li>');
-  fruits.forEach(function(item, index, array) {
-    document.write('<li>' + index + ' - ' + item + '</li>');
-  });
- document.write('</ul>');
-
- fruits.reverse();
- document.write('<ul class="wrap">');
- document.write('<li><b>Array after reversing it</b></li>');
-  fruits.forEach(function(item, index, array) {
-    document.write('<li>' + index + ' - ' + item + '</li>');
-  });
- document.write('</ul>');
-
-
-friends = ['Raju', 'Ranga', 'Rani', 'Rohit', 'Rahul', 'Radha', 'Reema', 'Rashmi'];
-
-
-
-
-</script>
-
-<div class="friend">
-  <img src="https://api.fnkr.net/testimg/350x200/D100BB/FFF/?text=Fruit+Name">
-  <p>Fruit Name</p>
-</div>
-
-<div class="friend">
-  <img src="https://api.fnkr.net/testimg/350x200/D100BB/FFF/?text=Fruit+Name">
-  <p>Fruit Name</p>
-</div>
-
-<div class="friend lucky">
-  <img src="https://api.fnkr.net/testimg/350x200/D100BB/FFF/?text=Fruit+Name">
-  <p>Fruit Name</p>
-</div>
-
-<div class="friend">
-  <img src="https://api.fnkr.net/testimg/350x200/D100BB/FFF/?text=Fruit+Name">
-  <p>Fruit Name</p>
-</div>
-
-<div class="friend">
-  <img src="https://api.fnkr.net/testimg/350x200/D100BB/FFF/?text=Fruit+Name">
-  <p>Fruit Name</p>
-</div>
 
 </div>
 
@@ -115,6 +30,11 @@ friends = ['Raju', 'Ranga', 'Rani', 'Rohit', 'Rahul', 'Radha', 'Reema', 'Rashmi'
   <div class="container">
     <h1 class="section-heading">Services we offer</h1>
     <div>
+
+
+
+
+
       <div class="service icon-html5">
         <i class="icon-html5"></i>
         <h2>Web Design</h2>
@@ -125,15 +45,15 @@ friends = ['Raju', 'Ranga', 'Rani', 'Rohit', 'Rahul', 'Radha', 'Reema', 'Rashmi'
         <p>Some text which introduces the above feature crisply. do this copy keeping seo in mind using keywords.</p>
       </div><!-- eo service -->
       <div class="service icon-wordpress">
-        <h2>Wordpress Development</h2>
+        <h2 id="title3">Wordpress Development</h2>
         <p>Some text which introduces the above feature crisply. do this copy keeping seo in mind using keywords.</p>
       </div><!-- eo service -->
       
     </div>
   </div>
-</div>
+  </div>
 
-<style>
+  <style>
   .wrap{
     width: 600px;
     margin:20px auto;
@@ -165,46 +85,77 @@ friends = ['Raju', 'Ranga', 'Rani', 'Rohit', 'Rahul', 'Radha', 'Reema', 'Rashmi'
   .toss-game p{clear: both }
   .bg-dark{padding:5px;}
 
-.triangle{
+  .triangle{
   clear: both;
   text-align: center;
-}
-.triangle:nth-child(odd){
+  }
+  .triangle:nth-child(odd){
   background-color: #fff;
-}
-.triangle span{
+  }
+  .triangle span{
   float: none;
   display: inline-block;
   margin: 3px;
-}
+  }
 
-.lead{
+  .lead{
   clear: both;
   font-size: 18px;
   font-weight: 700;
   background-color: #C709E9;
   padding: 10px;
   color: #FFF;
-}
+  }
 
 
 
-.friend{
+  .friend{
   width: 25%;
   float: left;
   border: 1px solid #000;
-}
-.friend.lucky{
+  }
+  .friend.lucky{
   border-color: #0F0;
   background-color: #1E9C18;
-}
-.friend img{
+  }
+  .friend img{
   max-width: 100%;
   padding: 10px;
   display: block;
-}
+  }
 
-</style>
+  </style>
+
+  <script src="js/vendor/jquery-3.1.1.min.js" ></script>
+  <script>
+  /*
+  jQuery(document).ready(function($) {
+
+  });
+
+
+  1. Choose element (Document) - jQuery or $
+  2. Wait till the element is ready - ready
+  3. execute the anonymus function
+
+  */
+
+
+  $(document).ready(function() {
+/*
+    $('.section-heading').css({
+      backgroundColor: 'red',
+      color: 'white'
+    });
+*/
+    $('.section-heading').css('backgroundColor', 'red');
+  });
+
+
+
+</script>
+
+
 
 </body>
 </html>
