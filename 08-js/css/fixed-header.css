@@ -1,0 +1,705 @@
+/*
+ * This code is done using html5boilerplate, bootstrap 4 and other fixes.
+ * We at dzineden use this code as the base for our websites and apps,
+ */
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+html {font-size: 1em;}
+body {
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+}
+p {margin-bottom: 1.3em;}
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.414em 0 0.5em;
+  font-weight: 400;
+  line-height: 1.2;
+  font-family: 'Roboto Slab', serif;
+}
+h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+}
+h2 {font-size: 2.369em;}
+h3 {font-size: 1.777em;}
+h4 {font-size: 1.333em;}
+small, .font_small {font-size: 0.75em;}
+
+
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*----------  Font Icons - www.icomoon.io/app  ----------*/
+
+@font-face {
+  font-family: 'b15cons';
+  src:  url('../fonts/b15cons.eot?713k3r');
+  src:  url('../fonts/b15cons.eot?713k3r#iefix') format('embedded-opentype'),
+    url('../fonts/b15cons.ttf?713k3r') format('truetype'),
+    url('../fonts/b15cons.woff?713k3r') format('woff'),
+    url('../fonts/b15cons.svg?713k3r#b15cons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, 
+[class*=" icon-"]:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'b15cons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-floral-bg:before {
+  content: "\e90e";
+}
+.icon-cycle:before {
+  content: "\e900";
+}
+.icon-android:before {
+  content: "\e901";
+  color: #a4c639;
+}
+.icon-apple:before {
+  content: "\e902";
+  color: #999;
+}
+.icon-behance:before {
+  content: "\e903";
+  color: #1769ff;
+}
+.icon-bitbucket:before {
+  content: "\e904";
+  color: #205081;
+}
+.icon-bootstrap:before {
+  content: "\e905";
+  color: #563d7c;
+}
+.icon-css3:before {
+  content: "\e906";
+  color: #1572b6;
+}
+.icon-css:before {
+  content: "\e907";
+  color: #f43059;
+}
+.icon-digg:before {
+  content: "\e908";
+}
+.icon-facebook:before {
+  content: "\e909";
+  color: #3b5998;
+}
+.icon-google:before {
+  content: "\e90a";
+  color: #dc4e41;
+}
+.icon-html5:before {
+  content: "\e90b";
+  color: #e34f26;
+}
+.icon-wordpress:before {
+  content: "\e90c";
+  color: #21759b;
+}
+.icon-3d_rotation:before {
+  content: "\e84d";
+}
+.icon-access_alarms:before {
+  content: "\e191";
+}
+.icon-accessibility:before {
+  content: "\e84e";
+}
+.icon-accessible:before {
+  content: "\e914";
+}
+.icon-battery_charging_full:before {
+  content: "\e1a3";
+}
+.icon-beach_access:before {
+  content: "\eb3e";
+}
+.icon-phone:before {
+  content: "\e0cd";
+}
+.icon-directions_bike:before {
+  content: "\e52f";
+}
+.icon-directions_run:before {
+  content: "\e566";
+}
+.icon-directions_walk:before {
+  content: "\e536";
+}
+.icon-done_all:before {
+  content: "\e877";
+}
+.icon-goat:before {
+  content: "\e90d";
+}
+.icon-shopping_cart:before {
+  content: "\e8cc";
+}
+.icon-notifications_paused:before {
+  content: "\e7f8";
+}
+
+/*----------  custom styles for the page  ----------*/
+
+body{background-color: #F8F8F8; }
+.bg-dark{background-color: #E5E5E5;}
+.bg-light{background-color: #F0EAFF;}
+
+.container{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.container:after{
+  content:"";
+  display: block;
+  clear: both;
+}
+@media (min-width:640px){
+  .container{
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width:768px){
+  .container{
+    width: 768px;
+  }
+}
+@media (min-width:980px){
+  .container{
+    width: 980px;
+  }
+}
+.section-heading{
+  text-align: center;
+  margin: 0 0 40px;
+  font-size:36px;
+  padding-top: 30px;
+}
+
+.service{
+  position: relative;
+  padding-left: 90px;
+  margin-bottom: 50px;
+}
+.service:before{
+  width:75px;
+  height:75px;
+  background-color: #fff;
+  border-radius:50%;
+  position: absolute;
+  line-height: 75px;
+  text-align: center;
+  font-size:40px;
+  left:0;
+  top:0;bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.service h2{
+  margin:0 0 10px;
+  font-size:26px;
+}
+.service p{
+  margin:0;
+}
+
+@media (min-width:768px){
+  .service{
+    width:33.33333%;
+    float: left;
+    padding: 140px 15px 15px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .service:before{
+    width:120px;
+    height:120px;
+    line-height: 120px;
+    font-size:70px;
+    left:0;
+    right:0;
+    top:0;
+    bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*----------  Spacer  ----------*/
+
+
+.spacer{
+  min-height: 600px;
+  margin-left: 40px;
+  border-left: dotted 1px #C1B0FF;
+}
+
+.bg-dark{padding:5px;}
+
+
+/*----------  Button Styles  ----------*/
+.top-btn,
+.animate-btn{
+  display: inline-block;
+  padding: 6px 15px;
+  background-color: #9006D7;
+  border-radius: 6px;
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.top-btn:hover,
+.animate-btn:hover{
+  background-color: #5A06D7;
+}
+
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2017-7-21 8:2:41
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation rotate-in-center
+ * ----------------------------------------
+ */
+.rotate-in-center {
+  -webkit-animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes rotate-in-center {
+  0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+  }
+}
+@keyframes rotate-in-center {
+  0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+
+/*----------  Demo of menu styling with sub-menu  ----------*/
+.site-header{
+  position: absolute;
+  width:100%;
+  top:0;
+  left:0;
+  right:0;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.75);
+}
+.site-header.fh{
+  position: fixed;
+  background-color: #E403A7;
+  z-index: 9;
+}
+.site-header h1{
+  margin:0 0 5px;
+  font-size:2.5em;
+  float: left;
+}
+.site-header.fh h1{
+  font-size:2em
+}
+.site-header h1 a{
+  color:#FFF;
+  text-decoration: none;
+}
+.site-header h1 a small{
+  display: block;
+  font-size:.3em
+}
+.site-header.fh h1 a small{
+  display: none;
+}
+@media (max-width:767px) {
+  .ham{
+    width:30px;
+    height:30px;
+    position: relative;
+    float: right;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .site-header.fh .ham{
+    margin-top: 10px;
+  }
+
+  .ham span{
+    width:30px;
+    position: absolute;
+    left:0;
+    height:3px;
+    background-color: #fff;
+    transition: all 250ms ease;
+  }
+  .ham span:first-child{
+    top:0;
+  }
+  .ham span:nth-child(2){
+    top:9px;
+  }
+  .ham span:last-child{
+    top:18px;
+    width:24px
+  }
+
+  /*----------  When btn pressed  ----------*/
+  .ham.closex{}
+  .ham.closex span:first-child{
+    transform:rotate(45deg);
+    top:9px;
+  }
+  .ham.closex span:nth-child(2){
+    transform:rotate(-45deg);
+  }
+  .ham.closex span:last-child{
+    left:-50px;
+    width:0;
+  }
+}
+@media (min-width:768px) {
+  .ham{display: none;}
+}
+/*----------  Site-header when fixed  ----------*/
+
+
+
+
+
+.site-header nav{
+  width:220px;
+  background-color: rgba(0,0,0,.75);
+  position: absolute;
+  top:50px;
+  right:0;
+  display: none;
+}
+.main-linkz {
+  margin:0;
+  list-style: none;
+  padding-left: 0;
+}
+.main-linkz:after {
+  content:"";
+  display: block;
+  clear: both;
+}
+.main-linkz > li {
+  position: relative;
+}
+.main-linkz > li.has-sub-menu > a:after {
+  content:"";
+  width:6px;
+  height:6px;
+  border-bottom: solid 1px #FFF;
+  border-left: solid 1px #FFF;
+  position: absolute;
+  right:20px;
+  top:10px;
+  transform:rotate(-45deg);
+}
+.main-linkz > li.has-sub-menu:hover > a:after {
+  border-bottom-color: #E000B3;
+  border-left-color: #E000B3;
+}
+.main-linkz > li > a {
+  display: block;
+  padding:5px 20px;
+  border-bottom: solid 1px #5A5A5A;
+  color:#FFF;
+  text-decoration: none;
+}
+.main-linkz > li:last-child > a {
+  border-bottom: none;
+}
+.main-linkz > li.is-active > a,
+.main-linkz > li:hover > a,
+.main-linkz > li > a:hover {
+  color:#E000B3;
+  background-color:#FFF;
+}
+
+/*----------  Submenu  ----------*/
+.sub-menu{
+  background-color: #fff;
+  border: solid 2px #E000B3;
+  border-top-style:none;
+  border-radius:0 0 8px 8px;
+  padding-left: 0;
+  list-style: none;
+  position: absolute;
+  left:-2px;
+  top:30px;
+  width:160px;
+  display: none;
+}
+.has-sub-menu:hover .sub-menu{
+  display: block;
+}
+.sub-menu li{}
+.sub-menu li a{
+  text-transform: uppercase;
+  font-size: 12px;
+  display: block;
+  line-height: 28px;
+  border-bottom: solid 1px #ECECEC;
+  padding:0 15px;
+  text-decoration: none;
+  color:#909090
+}
+.sub-menu li:last-child a{
+  border-bottom: none;
+}
+.sub-menu li a:hover{
+  color:#333
+}
+
+/*----------  Banner  ----------*/
+
+.banner{}
+.banner img{
+  display: block;
+  width:100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.hidden {
+    display: none !important;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+.invisible {
+    visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    p:first-letter,
+    div:first-letter,
+    blockquote:first-letter,
+    li:first-letter,
+    p:first-line,
+    div:first-line,
+    blockquote:first-line,
+    li:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
