@@ -213,8 +213,8 @@ textarea {
 /*----------  custom styles for the page  ----------*/
 
 body{background-color: #F8F8F8; }
-.bg-dark{background-color: #E5E5E5;}
-.bg-light{background-color: #F0EAFF;}
+.bg-dark{background-color: #EBC0FF;}
+.bg-light{background-color: #D9F9D7;}
 
 .container{
   margin-left: 15px;
@@ -377,6 +377,7 @@ body{background-color: #F8F8F8; }
   left:0;
   right:0;
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.75);
+  transition:all 250ms ease; 
 }
 .site-header.fh{
   position: fixed;
@@ -453,18 +454,19 @@ body{background-color: #F8F8F8; }
 }
 /*----------  Site-header when fixed  ----------*/
 
-
-
-
-
-.site-header nav{
-  width:220px;
-  background-color: rgba(0,0,0,.75);
-  position: absolute;
-  top:50px;
-  right:0;
-  display: none;
+@media (max-width:767px) {
+  .site-header nav{
+    width:220px;
+    background-color: rgba(0,0,0,.75);
+    position: absolute;
+    top:50px;
+    right:0;
+    display: none;
+  }
 }
+
+
+
 .main-linkz {
   margin:0;
   list-style: none;
@@ -478,6 +480,19 @@ body{background-color: #F8F8F8; }
 .main-linkz > li {
   position: relative;
 }
+@media (min-width:768px) {
+  .site-header nav{
+    float: right;
+    margin-top:20px;
+    display: block !important;
+  }
+  .site-header.fh nav{
+    margin-top:5px;
+  }
+  .main-linkz > li {
+    float: left;
+  }
+}
 .main-linkz > li.has-sub-menu > a:after {
   content:"";
   width:6px;
@@ -485,7 +500,7 @@ body{background-color: #F8F8F8; }
   border-bottom: solid 1px #FFF;
   border-left: solid 1px #FFF;
   position: absolute;
-  right:20px;
+  right:8px;
   top:10px;
   transform:rotate(-45deg);
 }
@@ -495,10 +510,23 @@ body{background-color: #F8F8F8; }
 }
 .main-linkz > li > a {
   display: block;
-  padding:5px 20px;
-  border-bottom: solid 1px #5A5A5A;
+  padding:5px 15px;
   color:#FFF;
   text-decoration: none;
+}
+@media (min-width:768px) {
+  .main-linkz > li > a {
+    margin-left: 10px;
+  }
+}
+.main-linkz > li.has-sub-menu > a {
+  padding-right:22px;
+}
+
+@media (max-width:767px) {
+  .main-linkz > li > a {
+    border-bottom: solid 1px #5A5A5A;
+  }
 }
 .main-linkz > li:last-child > a {
   border-bottom: none;
@@ -508,6 +536,14 @@ body{background-color: #F8F8F8; }
 .main-linkz > li > a:hover {
   color:#E000B3;
   background-color:#FFF;
+}
+@media (min-width:768px) {
+  .main-linkz > li.is-active > a,
+  .main-linkz > li:hover > a,
+  .main-linkz > li > a:hover {
+    border-radius:6px;
+  }
+ 
 }
 
 /*----------  Submenu  ----------*/

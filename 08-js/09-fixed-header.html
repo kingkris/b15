@@ -18,9 +18,9 @@
 
 
 </head>
-<body>
+<body id="home">
 
-<header class="site-header fh">
+<header class="site-header">
   <div class="container">
     <h1><a href="#">My Recipes <small>come, explore your taste buds with me!</small></a></h1>
     <div class="ham">
@@ -30,9 +30,9 @@
     </div>
     <nav>
       <ul class="main-linkz">
-        <li class="is-active"><a href="#">Link 01</a></li>
-        <li><a href="#">Link 02</a></li>
-        <li class="has-sub-menu"><a href="#">Link 03</a>
+        <li class="is-active"><a href="#home" data-link="I am home">Home</a></li>
+        <li><a href="#about" data-link="asdaskdjhasd">About me</a></li>
+        <li class="has-sub-menu"><a href="#services">Services</a>
           <ul class="sub-menu">
             <li><a href="#">Sub Link 01</a></li>
             <li><a href="#">Sub Link 02</a></li>
@@ -41,16 +41,8 @@
             <li><a href="#">Sub Link 05</a></li>
           </ul>
         </li>
-        <li class="has-sub-menu"><a href="#">Link 04</a>
-          <ul class="sub-menu">
-            <li><a href="#">Sub Link 01</a></li>
-            <li><a href="#">Sub Link 02</a></li>
-            <li><a href="#">Sub Link 03</a></li>
-            <li><a href="#">Sub Link 04</a></li>
-            <li><a href="#">Sub Link 05</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Link 05</a></li>
+        <li><a href="#gallery" data-link="this is gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -58,18 +50,16 @@
 <div class="banner">
   <img src="img/recipes.jpeg" alt="Recipes">
 </div>
-
-
+<div class="bg-dark">
+  <div class="container" id="about">
+    <h2 class="section-heading">About me</h2>
+    <div class="spacer"></div>
+  </div><!-- eo container -->
+</div><!-- eo bg-dark -->
 <div class="bg-light">
-  <div class="container">
-
+  <div class="container" id="services">
     <h2 class="section-heading">Services we offer</h2>
     <div>
-
-
-
-
-
       <div class="service icon-html5">
         <h2>Web Design</h2>
         <p>Some text which introduces the above feature crisply. do this copy keeping seo in mind using keywords.</p>
@@ -82,65 +72,27 @@
         <h2 id="title3">Wordpress Development</h2>
         <p>Some text which introduces the above feature crisply. do this copy keeping seo in mind using keywords.</p>
       </div><!-- eo service -->
-      
     </div>
-    <a href="#" class="animate-btn">Animate</a>
   </div>
-
-  <div class="spacer"></div>
-  <div class="container">
-
-    <h2 class="section-heading">Services we offer</h2>
-    <div>
-
-
-
-
-
-      <div class="service icon-html5">
-        <h2>Web Design</h2>
-        <p>Some text which introduces the above feature crisply. do this copy keeping seo in mind using keywords.</p>
-      </div><!-- eo service -->
-      <div class="service icon-facebook">
-        <h2 id="title2">Digital Marketing</h2>
-        <p>Some text which introduces the above feature crisply. do this copy keeping seo in mind using keywords.</p>
-      </div><!-- eo service -->
-      <div class="service icon-wordpress">
-        <h2 id="title3">Wordpress Development</h2>
-        <p>Some text which introduces the above feature crisply. do this copy keeping seo in mind using keywords.</p>
-      </div><!-- eo service -->
-      
-    </div>
-    <a href="#" class="animate-btn">Animate</a>
-  </div>
-  <div class="spacer"></div>
-  <div class="container">
-
-    <h2 class="section-heading">Services we offer</h2>
-    <div>
+</div><!-- eo bg-light -->
+<div class="bg-dark">
+  <div class="container" id="gallery">
+    <h2 class="section-heading">Gallery</h2>
+    <div class="spacer"></div>
+  </div><!-- eo container -->
+</div><!-- eo bg-dark -->
+<div class="bg-light">
+  <div class="container" id="contact">
+    <h2 class="section-heading">Contact me</h2>
+    <div class="spacer"></div>
+  </div><!-- eo container -->
+</div><!-- eo bg-light -->
 
 
 
 
 
-      <div class="service icon-html5">
-        <h2>Web Design</h2>
-        <p>Some text which introduces the above feature crisply. do this copy keeping seo in mind using keywords.</p>
-      </div><!-- eo service -->
-      <div class="service icon-facebook">
-        <h2 id="title2">Digital Marketing</h2>
-        <p>Some text which introduces the above feature crisply. do this copy keeping seo in mind using keywords.</p>
-      </div><!-- eo service -->
-      <div class="service icon-wordpress">
-        <h2 id="title3">Wordpress Development</h2>
-        <p>Some text which introduces the above feature crisply. do this copy keeping seo in mind using keywords.</p>
-      </div><!-- eo service -->
-      
-    </div>
-    <a href="#" class="animate-btn">Animate</a>
-    <a href="#" class="top-btn">Back to Top</a>
-  </div>
-  </div>
+
 
 
   <script src="js/vendor/jquery-3.1.1.min.js" ></script>
@@ -152,10 +104,25 @@ $(document).ready(function() {
   });
 
   $(document).scroll(function(event) {
-    console.log("Scrolled");
     x = $(this).scrollTop();
-    console.log(x);
-
+    y = ($('.banner').innerHeight())-30;
+    if(x > y){
+      $('.site-header').addClass('fh')
+    } else{
+      $('.site-header').removeClass('fh')
+    }
+  });
+  function menuHilighter(menuitem) {
+    $('.main-linkz li').removeClass('is-active');
+    $(menuitem).parent().addClass('is-active');
+  }
+  $('.main-linkz li a').click(function(event) {
+    /* Act on the event */
+    event.preventDefault();
+    menuHilighter(this);
+    elem = $(this).attr('href');
+    y = $(elem).position();
+    $('body').animate({scrollTop: (y.top)-30}, 600)
   });
 });
 
