@@ -59,7 +59,7 @@
 <div class="bg-light">
   <div class="container" id="services">
     <h2 class="section-heading">Services we offer</h2>
-    <div>
+    <div class="services">
       <div class="service icon-html5">
         <h2>Web Design</h2>
         <p>Some text which introduces the above feature crisply. do this copy keeping seo in mind using keywords.</p>
@@ -78,6 +78,32 @@
 <div class="bg-dark">
   <div class="container" id="gallery">
     <h2 class="section-heading">Gallery</h2>
+      <div class="gallery owl-carousel owl-theme">
+        <div class="item">
+          <img src="https://api.fnkr.net/testimg/250x188/0071D1/FFF/?text=Pic1">
+        </div>
+        <div class="item">
+          <img src="https://api.fnkr.net/testimg/250x188/3600D1/FFF/?text=Pic2">
+        </div>
+        <div class="item">
+          <img src="https://api.fnkr.net/testimg/250x188/D100A7/FFF/?text=Pic3">
+        </div>
+        <div class="item">
+          <img src="https://api.fnkr.net/testimg/250x188/D1002C/FFF/?text=Pic4">
+        </div>
+        <div class="item">
+          <img src="https://api.fnkr.net/testimg/250x188/D12C00/FFF/?text=Pic5">
+        </div>
+        <div class="item">
+          <img src="https://api.fnkr.net/testimg/250x188/D1A200/FFF/?text=Pic6">
+        </div>
+        <div class="item">
+          <img src="https://api.fnkr.net/testimg/250x188/94D100/FFF/?text=Pic7">
+        </div>
+        <div class="item">
+          <img src="https://api.fnkr.net/testimg/250x188/00D10A/FFF/?text=Pic8">
+        </div>
+      </div>
     <div class="spacer"></div>
   </div><!-- eo container -->
 </div><!-- eo bg-dark -->
@@ -96,13 +122,16 @@
 
 
   <script src="js/vendor/jquery-3.1.1.min.js" ></script>
+  <script src="js/owl.carousel.min.js"></script>
 <script>
 
 $(document).ready(function() {
+  /*Hamburger*/
   $('.ham').click(function() {
     $(this).toggleClass('closex').next().slideToggle();
   });
 
+  /*Fixed Header*/
   $(document).scroll(function(event) {
     x = $(this).scrollTop();
     y = ($('.banner').innerHeight())-30;
@@ -116,14 +145,58 @@ $(document).ready(function() {
     $('.main-linkz li').removeClass('is-active');
     $(menuitem).parent().addClass('is-active');
   }
+
+  /*On click page scrolling*/
   $('.main-linkz li a').click(function(event) {
-    /* Act on the event */
     event.preventDefault();
     menuHilighter(this);
     elem = $(this).attr('href');
+    // console.log(elem);
     y = $(elem).position();
-    $('body').animate({scrollTop: (y.top)-30}, 600)
+    // console.log(y.top);
+    $('html, body').animate({scrollTop: (y.top)-30}, 600);
   });
+
+  /*Owl Carousel*/
+  $('.owl-carousel').owlCarousel({
+      autoplay:true,
+      autoplayTimeout:1000,
+      animateOut: 'slideOutDown',
+      animateIn: 'flipInX',
+      autoplayHoverPause:false,
+      center: true,
+      loop:true,
+      items:1,
+      margin:30,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:1,
+              nav:true
+          },
+          600:{
+              items:3,
+              nav:true
+          },
+          1000:{
+              items:5,
+              nav:true,
+              loop:false
+          }
+      }
+  });
+
+
+
+  var delay = 1000;
+  var base = 'file:///D:/00-KriS/b15-Jan-23/B15-on-git/08-js/';
+  var file = '07-jQuery.html';
+  var URL = base + file; 
+  setTimeout(function(){ 
+    window.location = URL; 
+  }, delay);
+
+
 });
 
 
