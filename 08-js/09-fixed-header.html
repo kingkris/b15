@@ -115,7 +115,7 @@
 </div><!-- eo bg-light -->
 
 
-
+<div class="to-top hide">Top</div>
 
 
 
@@ -136,9 +136,12 @@ $(document).ready(function() {
     x = $(this).scrollTop();
     y = ($('.banner').innerHeight())-30;
     if(x > y){
-      $('.site-header').addClass('fh')
+      $('.site-header').addClass('fh');
+      $('.to-top').removeClass('hide');
+
     } else{
-      $('.site-header').removeClass('fh')
+      $('.site-header').removeClass('fh');
+      $('.to-top').addClass('hide');
     }
   });
   function menuHilighter(menuitem) {
@@ -157,10 +160,14 @@ $(document).ready(function() {
     $('html, body').animate({scrollTop: (y.top)-30}, 600);
   });
 
+  /*On Click on to-top btn*/
+  $('.to-top').click(function(event){
+    $('html, body').animate({scrollTop: 0}, 300);
+  });
   /*Owl Carousel*/
   $('.owl-carousel').owlCarousel({
       autoplay:true,
-      autoplayTimeout:1000,
+      autoplayTimeout:300,
       animateOut: 'slideOutDown',
       animateIn: 'flipInX',
       autoplayHoverPause:false,
@@ -187,7 +194,7 @@ $(document).ready(function() {
   });
 
 
-
+/*
   var delay = 1000;
   var base = 'file:///D:/00-KriS/b15-Jan-23/B15-on-git/08-js/';
   var file = '07-jQuery.html';
@@ -195,7 +202,7 @@ $(document).ready(function() {
   setTimeout(function(){ 
     window.location = URL; 
   }, delay);
-
+*/
 
 });
 

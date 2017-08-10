@@ -596,7 +596,39 @@ body{background-color: #F8F8F8; }
   width:100%;
   height: auto;
 }
-
+.to-top.hide{
+  display: none;
+}
+.content{
+  background-color: rgba(255,255,255,.5);
+  padding:20px;
+  border: 1px solid #CCC;
+  border-radius: 8px;
+  margin:0 auto;
+  max-width:700px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+.to-top{
+  width:40px;
+  height:40px;
+  line-height: 40px;
+  text-align: center;
+  color:#FFF;
+  border-radius:50%;
+  border: 1px solid #CCC;
+  text-transform: uppercase;
+  font-size:14px;
+  position: fixed;
+  right:10px;
+  bottom:10px;
+  cursor: pointer;
+  background: radial-gradient(
+                              ellipse at center,  
+                              rgba(49,75,247,1) 0%,
+                              rgba(125,185,232,0) 100%
+                              );
+}
 
 /*====================================
 =            Owl Carousel            =
