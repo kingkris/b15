@@ -61,7 +61,7 @@
     <h2 class="section-heading">Services we offer</h2>
     <div class="services">
       <div class="service icon-html5">
-        <h2>Web Design</h2>
+        <h2 class="ani1">Web Design</h2>
         <p>Some text which introduces the above feature crisply. do this copy keeping seo in mind using keywords.</p>
       </div><!-- eo service -->
       <div class="service icon-facebook">
@@ -123,9 +123,15 @@
 
   <script src="js/vendor/jquery-3.1.1.min.js" ></script>
   <script src="js/owl.carousel.min.js"></script>
+  <script src="js/gsap/TweenMax.min.js"></script>
+
 <script>
 
 $(document).ready(function() {
+
+  TweenMax.to('.ani1', 1, {right:300, fontSize:'50px'});
+
+
   /*Hamburger*/
   $('.ham').click(function() {
     $(this).toggleClass('closex').next().slideToggle();

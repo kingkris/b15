@@ -272,7 +272,8 @@ body{background-color: #F8F8F8; }
 .service h2{
   margin:0 0 10px;
   font-size:18px;
-  color: #E403A7
+  color: #E403A7;
+  position: relative;
 }
 @media (min-width:980px) {
   .service h2{
